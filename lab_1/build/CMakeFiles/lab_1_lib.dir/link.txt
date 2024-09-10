@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblab_1_lib.a CMakeFiles/lab_1_lib.dir/src/chocolate_slicer.cpp.o
+/usr/bin/ranlib liblab_1_lib.a
