@@ -114,7 +114,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.25/Modules/Platform/Linux.cmake"
   "/usr/share/cmake-3.25/Modules/Platform/UnixPaths.cmake"
   "/usr/share/cmake-3.25/Modules/WriteBasicConfigVersionFile.cmake"
-  "/workspaces/OOP_labs_Andrew/lab_1/CMakeLists.txt"
+  "/workspaces/OOP_labs_Andrew/lab_2/CMakeLists.txt"
   "CMakeFiles/3.25.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.25.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.25.1/CMakeSystem.cmake"
@@ -157,8 +157,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/lab_1_lib.dir/DependInfo.cmake"
-  "CMakeFiles/lab_1_exe.dir/DependInfo.cmake"
+  "CMakeFiles/lab_2_lib.dir/DependInfo.cmake"
+  "CMakeFiles/lab_2_exe.dir/DependInfo.cmake"
   "CMakeFiles/tests.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
