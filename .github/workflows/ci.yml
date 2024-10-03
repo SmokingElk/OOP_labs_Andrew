@@ -27,6 +27,12 @@ jobs:
       #   with:
       #     googletest_tag: 'release-1.11.0'
 
+      - name: Update libstdcpp
+        run: |
+          sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+          sudo apt-get update
+          sudo apt-get install --only-upgrade libstdc++6
+
       - name: run tests
         run: |
           cd ${{ matrix.lab }}/build
