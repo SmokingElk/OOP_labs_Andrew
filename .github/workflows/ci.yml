@@ -22,10 +22,10 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # - name: Install googletest
-      #   uses: cvpkg/googletest-action@v0.1
-      #   with:
-      #     googletest_tag: 'release-1.11.0'
+      - name: Install googletest
+        uses: cvpkg/googletest-action@v0.1
+        with:
+          googletest_tag: 'release-1.11.0'
 
       - name: Update libstdcpp
         run: |
