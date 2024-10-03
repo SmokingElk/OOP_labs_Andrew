@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblab_2_lib.a CMakeFiles/lab_2_lib.dir/src/Six.cpp.o
+/usr/bin/ranlib liblab_2_lib.a
