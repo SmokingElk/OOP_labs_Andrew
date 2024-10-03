@@ -1,0 +1,40 @@
+name: Test
+
+on:
+  push: 
+    branches:
+      - '**'
+      - '!main'
+  
+  pull_request:
+    branches:
+      - 'main'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        lab: [lab_1, lab_2]
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install googletest
+        uses: cvpkg/googletest-action@v0.1
+        with:
+          googletest_tag: 'release-1.11.0'
+
+      - name: Update libstdcpp
+        run: |
+          sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+          sudo apt-get update
+          sudo apt-get install --only-upgrade libstdc++6
+
+      - name: run tests
+        run: |
+          cd ${{ matrix.lab }}/build
+          chmod u+x ./tests
+          ./tests 
