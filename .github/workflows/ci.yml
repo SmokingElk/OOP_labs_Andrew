@@ -22,7 +22,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Install dependencies
       - name: Install googletest
         uses: cvpkg/googletest-action@v0.1
         with:
@@ -31,4 +30,4 @@ jobs:
       - name: run tests
         run: |
           cd ${{ matrix.lab }}/build
-          tests
+          tests 
