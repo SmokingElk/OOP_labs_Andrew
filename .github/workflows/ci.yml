@@ -30,4 +30,5 @@ jobs:
       - name: run tests
         run: |
           cd ${{ matrix.lab }}/build
+          chmod u+x ./tests
           ./tests 
