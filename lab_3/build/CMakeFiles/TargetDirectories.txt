@@ -1,9 +1,10 @@
+/workspaces/OOP_labs_Andrew/lab_3/build/CMakeFiles/lab_3_exe.dir
+/workspaces/OOP_labs_Andrew/lab_3/build/CMakeFiles/lab_3_lib_utils.dir
 /workspaces/OOP_labs_Andrew/lab_3/build/CMakeFiles/lab_3_lib_point.dir
 /workspaces/OOP_labs_Andrew/lab_3/build/CMakeFiles/lab_3_lib_figure.dir
 /workspaces/OOP_labs_Andrew/lab_3/build/CMakeFiles/lab_3_lib_triangle.dir
 /workspaces/OOP_labs_Andrew/lab_3/build/CMakeFiles/lab_3_lib_hexagon.dir
 /workspaces/OOP_labs_Andrew/lab_3/build/CMakeFiles/lab_3_lib_octagon.dir
-/workspaces/OOP_labs_Andrew/lab_3/build/CMakeFiles/lab_3_exe.dir
 /workspaces/OOP_labs_Andrew/lab_3/build/CMakeFiles/tests.dir
 /workspaces/OOP_labs_Andrew/lab_3/build/CMakeFiles/test.dir
 /workspaces/OOP_labs_Andrew/lab_3/build/CMakeFiles/edit_cache.dir

@@ -92,11 +92,14 @@ lab_3_exe_EXTERNAL_OBJECTS =
 
 lab_3_exe: CMakeFiles/lab_3_exe.dir/main.cpp.o
 lab_3_exe: CMakeFiles/lab_3_exe.dir/build.make
+lab_3_exe: liblab_3_lib_utils.a
 lab_3_exe: liblab_3_lib_point.a
 lab_3_exe: liblab_3_lib_figure.a
 lab_3_exe: liblab_3_lib_triangle.a
 lab_3_exe: liblab_3_lib_hexagon.a
 lab_3_exe: liblab_3_lib_octagon.a
+lab_3_exe: liblab_3_lib_point.a
+lab_3_exe: liblab_3_lib_utils.a
 lab_3_exe: CMakeFiles/lab_3_exe.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspaces/OOP_labs_Andrew/lab_3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable lab_3_exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lab_3_exe.dir/link.txt --verbose=$(VERBOSE)

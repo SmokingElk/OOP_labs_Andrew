@@ -364,6 +364,18 @@ lab_3_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 lab_3_SOURCE_DIR:STATIC=/workspaces/OOP_labs_Andrew/lab_3
 
+//Dependencies for the target
+lab_3_lib_hexagon_LIB_DEPENDS:STATIC=general;lab_3_lib_utils;general;lab_3_lib_point;
+
+//Dependencies for the target
+lab_3_lib_octagon_LIB_DEPENDS:STATIC=general;lab_3_lib_utils;general;lab_3_lib_point;
+
+//Dependencies for the target
+lab_3_lib_point_LIB_DEPENDS:STATIC=general;lab_3_lib_utils;
+
+//Dependencies for the target
+lab_3_lib_triangle_LIB_DEPENDS:STATIC=general;lab_3_lib_utils;general;lab_3_lib_point;
+
 
 ########################
 # INTERNAL cache entries

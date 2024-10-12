@@ -172,6 +172,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named lab_3_exe
+
+# Build rule for target.
+lab_3_exe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab_3_exe
+.PHONY : lab_3_exe
+
+# fast build rule for target.
+lab_3_exe/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_3_exe.dir/build.make CMakeFiles/lab_3_exe.dir/build
+.PHONY : lab_3_exe/fast
+
+#=============================================================================
+# Target rules for targets named lab_3_lib_utils
+
+# Build rule for target.
+lab_3_lib_utils: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab_3_lib_utils
+.PHONY : lab_3_lib_utils
+
+# fast build rule for target.
+lab_3_lib_utils/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_3_lib_utils.dir/build.make CMakeFiles/lab_3_lib_utils.dir/build
+.PHONY : lab_3_lib_utils/fast
+
+#=============================================================================
 # Target rules for targets named lab_3_lib_point
 
 # Build rule for target.
@@ -235,19 +261,6 @@ lab_3_lib_octagon: cmake_check_build_system
 lab_3_lib_octagon/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_3_lib_octagon.dir/build.make CMakeFiles/lab_3_lib_octagon.dir/build
 .PHONY : lab_3_lib_octagon/fast
-
-#=============================================================================
-# Target rules for targets named lab_3_exe
-
-# Build rule for target.
-lab_3_exe: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab_3_exe
-.PHONY : lab_3_exe
-
-# fast build rule for target.
-lab_3_exe/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_3_exe.dir/build.make CMakeFiles/lab_3_exe.dir/build
-.PHONY : lab_3_exe/fast
 
 #=============================================================================
 # Target rules for targets named tests
@@ -458,6 +471,30 @@ src/triangle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_3_lib_triangle.dir/build.make CMakeFiles/lab_3_lib_triangle.dir/src/triangle.cpp.s
 .PHONY : src/triangle.cpp.s
 
+src/utils.o: src/utils.cpp.o
+.PHONY : src/utils.o
+
+# target to build an object file
+src/utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_3_lib_utils.dir/build.make CMakeFiles/lab_3_lib_utils.dir/src/utils.cpp.o
+.PHONY : src/utils.cpp.o
+
+src/utils.i: src/utils.cpp.i
+.PHONY : src/utils.i
+
+# target to preprocess a source file
+src/utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_3_lib_utils.dir/build.make CMakeFiles/lab_3_lib_utils.dir/src/utils.cpp.i
+.PHONY : src/utils.cpp.i
+
+src/utils.s: src/utils.cpp.s
+.PHONY : src/utils.s
+
+# target to generate assembly for a file
+src/utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_3_lib_utils.dir/build.make CMakeFiles/lab_3_lib_utils.dir/src/utils.cpp.s
+.PHONY : src/utils.cpp.s
+
 test/test.o: test/test.cpp.o
 .PHONY : test/test.o
 
@@ -505,6 +542,7 @@ help:
 	@echo "... lab_3_lib_octagon"
 	@echo "... lab_3_lib_point"
 	@echo "... lab_3_lib_triangle"
+	@echo "... lab_3_lib_utils"
 	@echo "... tests"
 	@echo "... main.o"
 	@echo "... main.i"
@@ -524,6 +562,9 @@ help:
 	@echo "... src/triangle.o"
 	@echo "... src/triangle.i"
 	@echo "... src/triangle.s"
+	@echo "... src/utils.o"
+	@echo "... src/utils.i"
+	@echo "... src/utils.s"
 	@echo "... test/test.o"
 	@echo "... test/test.i"
 	@echo "... test/test.s"

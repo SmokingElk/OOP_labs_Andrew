@@ -202,10 +202,68 @@ CMakeFiles/lab_3_lib_hexagon.dir/src/hexagon.cpp.o: /workspaces/OOP_labs_Andrew/
   /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/basic_file.h \
   /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++io.h \
   /usr/local/include/c++/14.2.0/bits/fstream.tcc \
+  /usr/local/include/c++/14.2.0/math.h \
+  /usr/local/include/c++/14.2.0/cmath \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/local/include/c++/14.2.0/bits/specfun.h \
+  /usr/local/include/c++/14.2.0/limits \
+  /usr/local/include/c++/14.2.0/tr1/gamma.tcc \
+  /usr/local/include/c++/14.2.0/tr1/special_function_util.h \
+  /usr/local/include/c++/14.2.0/tr1/bessel_function.tcc \
+  /usr/local/include/c++/14.2.0/tr1/beta_function.tcc \
+  /usr/local/include/c++/14.2.0/tr1/ell_integral.tcc \
+  /usr/local/include/c++/14.2.0/tr1/exp_integral.tcc \
+  /usr/local/include/c++/14.2.0/tr1/hypergeometric.tcc \
+  /usr/local/include/c++/14.2.0/tr1/legendre_function.tcc \
+  /usr/local/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
+  /usr/local/include/c++/14.2.0/tr1/poly_hermite.tcc \
+  /usr/local/include/c++/14.2.0/tr1/poly_laguerre.tcc \
+  /usr/local/include/c++/14.2.0/tr1/riemann_zeta.tcc \
+  /workspaces/OOP_labs_Andrew/lab_3/include/utils.h \
+  /workspaces/OOP_labs_Andrew/lab_3/include/point.h \
   /workspaces/OOP_labs_Andrew/lab_3/include/figure.h
 
 
+/workspaces/OOP_labs_Andrew/lab_3/include/utils.h:
+
+/usr/local/include/c++/14.2.0/tr1/riemann_zeta.tcc:
+
+/usr/local/include/c++/14.2.0/tr1/poly_laguerre.tcc:
+
+/usr/local/include/c++/14.2.0/tr1/hypergeometric.tcc:
+
 /workspaces/OOP_labs_Andrew/lab_3/include/figure.h:
+
+/usr/local/include/c++/14.2.0/tr1/exp_integral.tcc:
+
+/usr/local/include/c++/14.2.0/tr1/ell_integral.tcc:
+
+/usr/local/include/c++/14.2.0/tr1/bessel_function.tcc:
+
+/usr/local/include/c++/14.2.0/tr1/special_function_util.h:
+
+/usr/local/include/c++/14.2.0/bits/specfun.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+/usr/include/math.h:
+
+/usr/local/include/c++/14.2.0/math.h:
 
 /usr/local/include/c++/14.2.0/bits/fstream.tcc:
 
@@ -229,6 +287,8 @@ CMakeFiles/lab_3_lib_hexagon.dir/src/hexagon.cpp.o: /workspaces/OOP_labs_Andrew/
 
 /usr/local/include/c++/14.2.0/bits/streambuf.tcc:
 
+/usr/local/include/c++/14.2.0/tr1/poly_hermite.tcc:
+
 /usr/local/include/c++/14.2.0/streambuf:
 
 /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/error_constants.h:
@@ -246,6 +306,8 @@ CMakeFiles/lab_3_lib_hexagon.dir/src/hexagon.cpp.o: /workspaces/OOP_labs_Andrew/
 /usr/local/include/c++/14.2.0/bits/basic_string.tcc:
 
 /usr/local/include/c++/14.2.0/bits/charconv.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
@@ -317,6 +379,8 @@ CMakeFiles/lab_3_lib_hexagon.dir/src/hexagon.cpp.o: /workspaces/OOP_labs_Andrew/
 
 /usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include/stdarg.h:
 
+/usr/local/include/c++/14.2.0/limits:
+
 /usr/include/stdc-predef.h:
 
 /usr/local/include/c++/14.2.0/bits/ranges_cmp.h:
@@ -324,6 +388,8 @@ CMakeFiles/lab_3_lib_hexagon.dir/src/hexagon.cpp.o: /workspaces/OOP_labs_Andrew/
 /usr/include/stdio.h:
 
 /usr/local/include/c++/14.2.0/typeinfo:
+
+/workspaces/OOP_labs_Andrew/lab_3/include/point.h:
 
 /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++config.h:
 
@@ -354,6 +420,8 @@ CMakeFiles/lab_3_lib_hexagon.dir/src/hexagon.cpp.o: /workspaces/OOP_labs_Andrew/
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
 /workspaces/OOP_labs_Andrew/lab_3/include/hexagon.h:
 
@@ -447,6 +515,8 @@ CMakeFiles/lab_3_lib_hexagon.dir/src/hexagon.cpp.o: /workspaces/OOP_labs_Andrew/
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
+/usr/local/include/c++/14.2.0/tr1/beta_function.tcc:
+
 /usr/include/alloca.h:
 
 /workspaces/OOP_labs_Andrew/lab_3/src/hexagon.cpp:
@@ -458,6 +528,8 @@ CMakeFiles/lab_3_lib_hexagon.dir/src/hexagon.cpp.o: /workspaces/OOP_labs_Andrew/
 /usr/local/include/c++/14.2.0/bits/utility.h:
 
 /usr/local/include/c++/14.2.0/ios:
+
+/usr/local/include/c++/14.2.0/tr1/legendre_function.tcc:
 
 /usr/local/include/c++/14.2.0/bits/range_access.h:
 
@@ -493,6 +565,8 @@ CMakeFiles/lab_3_lib_hexagon.dir/src/hexagon.cpp.o: /workspaces/OOP_labs_Andrew/
 
 /usr/include/ctype.h:
 
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
 /usr/local/include/c++/14.2.0/bits/localefwd.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
@@ -512,6 +586,8 @@ CMakeFiles/lab_3_lib_hexagon.dir/src/hexagon.cpp.o: /workspaces/OOP_labs_Andrew/
 /usr/local/include/c++/14.2.0/bits/stl_iterator_base_types.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/usr/local/include/c++/14.2.0/tr1/gamma.tcc:
 
 /usr/local/include/c++/14.2.0/ext/type_traits.h:
 
@@ -535,7 +611,11 @@ CMakeFiles/lab_3_lib_hexagon.dir/src/hexagon.cpp.o: /workspaces/OOP_labs_Andrew/
 
 /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/gthr.h:
 
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
 /usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include-fixed/pthread.h:
+
+/usr/local/include/c++/14.2.0/cmath:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
@@ -595,6 +675,8 @@ CMakeFiles/lab_3_lib_hexagon.dir/src/hexagon.cpp.o: /workspaces/OOP_labs_Andrew/
 
 /usr/local/include/c++/14.2.0/bits/ostream_insert.h:
 
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
 /usr/local/include/c++/14.2.0/bits/stl_iterator.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
@@ -602,6 +684,8 @@ CMakeFiles/lab_3_lib_hexagon.dir/src/hexagon.cpp.o: /workspaces/OOP_labs_Andrew/
 /usr/local/include/c++/14.2.0/bits/stl_function.h:
 
 /usr/local/include/c++/14.2.0/backward/binders.h:
+
+/usr/local/include/c++/14.2.0/tr1/modified_bessel_func.tcc:
 
 /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/ctype_base.h:
 

@@ -77,12 +77,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/lab_3_exe.dir/DependInfo.cmake"
+  "CMakeFiles/lab_3_lib_utils.dir/DependInfo.cmake"
   "CMakeFiles/lab_3_lib_point.dir/DependInfo.cmake"
   "CMakeFiles/lab_3_lib_figure.dir/DependInfo.cmake"
   "CMakeFiles/lab_3_lib_triangle.dir/DependInfo.cmake"
   "CMakeFiles/lab_3_lib_hexagon.dir/DependInfo.cmake"
   "CMakeFiles/lab_3_lib_octagon.dir/DependInfo.cmake"
-  "CMakeFiles/lab_3_exe.dir/DependInfo.cmake"
   "CMakeFiles/tests.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"

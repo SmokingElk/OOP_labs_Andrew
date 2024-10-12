@@ -375,6 +375,37 @@ CMakeFiles/tests.dir/test/test.cpp.o: /workspaces/OOP_labs_Andrew/lab_3/test/tes
   _deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
   _deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
   _deps/googletest-src/googletest/include/gtest/gtest_prod.h \
+  /usr/local/include/c++/14.2.0/math.h \
+  /usr/local/include/c++/14.2.0/cmath \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/local/include/c++/14.2.0/bits/specfun.h \
+  /usr/local/include/c++/14.2.0/tr1/gamma.tcc \
+  /usr/local/include/c++/14.2.0/tr1/special_function_util.h \
+  /usr/local/include/c++/14.2.0/tr1/bessel_function.tcc \
+  /usr/local/include/c++/14.2.0/tr1/beta_function.tcc \
+  /usr/local/include/c++/14.2.0/tr1/ell_integral.tcc \
+  /usr/local/include/c++/14.2.0/tr1/exp_integral.tcc \
+  /usr/local/include/c++/14.2.0/tr1/hypergeometric.tcc \
+  /usr/local/include/c++/14.2.0/tr1/legendre_function.tcc \
+  /usr/local/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
+  /usr/local/include/c++/14.2.0/tr1/poly_hermite.tcc \
+  /usr/local/include/c++/14.2.0/tr1/poly_laguerre.tcc \
+  /usr/local/include/c++/14.2.0/tr1/riemann_zeta.tcc \
+  /workspaces/OOP_labs_Andrew/lab_3/include/utils.h \
+  /workspaces/OOP_labs_Andrew/lab_3/include/point.h \
+  /usr/local/include/c++/14.2.0/fstream \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/basic_file.h \
+  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++io.h \
+  /usr/local/include/c++/14.2.0/bits/fstream.tcc \
   /workspaces/OOP_labs_Andrew/lab_3/include/figure.h \
   /workspaces/OOP_labs_Andrew/lab_3/include/triangle.h \
   /workspaces/OOP_labs_Andrew/lab_3/include/hexagon.h \
@@ -386,6 +417,38 @@ CMakeFiles/tests.dir/test/test.cpp.o: /workspaces/OOP_labs_Andrew/lab_3/test/tes
 /workspaces/OOP_labs_Andrew/lab_3/include/hexagon.h:
 
 /workspaces/OOP_labs_Andrew/lab_3/include/figure.h:
+
+/usr/local/include/c++/14.2.0/bits/fstream.tcc:
+
+/usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++io.h:
+
+/usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/basic_file.h:
+
+/workspaces/OOP_labs_Andrew/lab_3/include/point.h:
+
+/usr/local/include/c++/14.2.0/tr1/riemann_zeta.tcc:
+
+/usr/local/include/c++/14.2.0/tr1/poly_laguerre.tcc:
+
+/usr/local/include/c++/14.2.0/bits/specfun.h:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/usr/local/include/c++/14.2.0/tr1/bessel_function.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+/usr/local/include/c++/14.2.0/cmath:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 _deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h:
 
@@ -447,6 +510,8 @@ _deps/googletest-src/googletest/include/gtest/gtest-printers.h:
 
 /usr/local/include/c++/14.2.0/bits/hashtable.h:
 
+/workspaces/OOP_labs_Andrew/lab_3/include/utils.h:
+
 /usr/local/include/c++/14.2.0/unordered_map:
 
 /usr/local/include/c++/14.2.0/variant:
@@ -469,6 +534,8 @@ _deps/googletest-src/googletest/include/gtest/gtest-printers.h:
 
 /usr/local/include/c++/14.2.0/bits/unique_lock.h:
 
+/usr/local/include/c++/14.2.0/tr1/hypergeometric.tcc:
+
 /usr/local/include/c++/14.2.0/bits/chrono.h:
 
 _deps/googletest-src/googletest/include/gtest/internal/gtest-port-arch.h:
@@ -484,6 +551,8 @@ _deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h:
 /usr/include/asm-generic/posix_types.h:
 
 /usr/include/x86_64-linux-gnu/asm/posix_types.h:
+
+/usr/local/include/c++/14.2.0/tr1/legendre_function.tcc:
 
 /usr/include/linux/stddef.h:
 
@@ -532,6 +601,8 @@ _deps/googletest-src/googletest/include/gtest/gtest-message.h:
 /usr/local/include/c++/14.2.0/debug/assertions.h:
 
 /usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include-fixed/pthread.h:
+
+/usr/local/include/c++/14.2.0/math.h:
 
 /usr/local/include/c++/14.2.0/bits/cxxabi_forced.h:
 
@@ -691,6 +762,8 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal
 
 /usr/local/include/c++/14.2.0/bits/stl_vector.h:
 
+/usr/local/include/c++/14.2.0/tr1/beta_function.tcc:
+
 /usr/local/include/c++/14.2.0/iterator:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
@@ -767,6 +840,8 @@ _deps/googletest-src/googletest/include/gtest/gtest_prod.h:
 
 /usr/local/include/c++/14.2.0/bits/allocated_ptr.h:
 
+/usr/local/include/c++/14.2.0/tr1/poly_hermite.tcc:
+
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/local/include/c++/14.2.0/bits/ptr_traits.h:
@@ -819,6 +894,8 @@ _deps/googletest-src/googletest/include/gtest/gtest_prod.h:
 
 /usr/local/include/c++/14.2.0/bits/exception.h:
 
+/usr/local/include/c++/14.2.0/tr1/exp_integral.tcc:
+
 /usr/local/include/c++/14.2.0/bits/utility.h:
 
 /usr/local/include/c++/14.2.0/bits/memoryfwd.h:
@@ -837,6 +914,8 @@ _deps/googletest-src/googletest/include/gtest/gtest_prod.h:
 
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
+/usr/local/include/c++/14.2.0/tr1/gamma.tcc:
+
 /usr/local/include/c++/14.2.0/bits/ranges_algobase.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
@@ -853,6 +932,8 @@ _deps/googletest-src/googletest/include/gtest/gtest_prod.h:
 
 /usr/include/linux/limits.h:
 
+/usr/local/include/c++/14.2.0/tr1/special_function_util.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
 
 /usr/local/include/c++/14.2.0/new:
@@ -864,6 +945,10 @@ _deps/googletest-src/googletest/include/gtest/gtest_prod.h:
 /usr/local/include/c++/14.2.0/bits/ranges_cmp.h:
 
 /usr/local/include/c++/14.2.0/bits/exception_defines.h:
+
+/usr/local/include/c++/14.2.0/fstream:
+
+/usr/include/math.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
@@ -880,6 +965,8 @@ _deps/googletest-src/googletest/include/gtest/gtest_prod.h:
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/local/include/c++/14.2.0/numbers:
+
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /usr/local/include/c++/14.2.0/pstl/glue_memory_defs.h:
 
@@ -943,6 +1030,8 @@ _deps/googletest-src/googletest/include/gtest/gtest_prod.h:
 
 /usr/local/include/c++/14.2.0/bits/basic_string.h:
 
+/usr/local/include/c++/14.2.0/tr1/ell_integral.tcc:
+
 /usr/local/include/c++/14.2.0/bits/std_function.h:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
@@ -979,6 +1068,8 @@ _deps/googletest-src/googletest/include/gtest/gtest-param-test.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
+/usr/local/include/c++/14.2.0/tr1/modified_bessel_func.tcc:
+
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/local/include/c++/14.2.0/any:
@@ -1006,6 +1097,8 @@ _deps/googletest-src/googletest/include/gtest/gtest-param-test.h:
 /usr/local/include/c++/14.2.0/bits/std_abs.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
 /usr/local/include/c++/14.2.0/cstdint:
 
