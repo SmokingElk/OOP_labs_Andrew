@@ -20,14 +20,25 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
 # компиляция файлов проекта
+add_executable(${CMAKE_PROJECT_NAME}_exe main.cpp)
+
 add_library(${CMAKE_PROJECT_NAME}_lib_utils src/utils.cpp)
 add_library(${CMAKE_PROJECT_NAME}_lib_point src/point.cpp)
 add_library(${CMAKE_PROJECT_NAME}_lib_figure src/figure.cpp)
 add_library(${CMAKE_PROJECT_NAME}_lib_triangle src/triangle.cpp)
 add_library(${CMAKE_PROJECT_NAME}_lib_hexagon src/hexagon.cpp)
 add_library(${CMAKE_PROJECT_NAME}_lib_octagon src/octagon.cpp)
-add_executable(${CMAKE_PROJECT_NAME}_exe main.cpp)
 
+target_link_libraries(${CMAKE_PROJECT_NAME}_lib_point PRIVATE ${CMAKE_PROJECT_NAME}_lib_utils)
+target_link_libraries(${CMAKE_PROJECT_NAME}_lib_triangle PRIVATE ${CMAKE_PROJECT_NAME}_lib_utils)
+target_link_libraries(${CMAKE_PROJECT_NAME}_lib_hexagon PRIVATE ${CMAKE_PROJECT_NAME}_lib_utils)
+target_link_libraries(${CMAKE_PROJECT_NAME}_lib_octagon PRIVATE ${CMAKE_PROJECT_NAME}_lib_utils)
+
+target_link_libraries(${CMAKE_PROJECT_NAME}_lib_triangle PRIVATE ${CMAKE_PROJECT_NAME}_lib_point)
+target_link_libraries(${CMAKE_PROJECT_NAME}_lib_hexagon PRIVATE ${CMAKE_PROJECT_NAME}_lib_point)
+target_link_libraries(${CMAKE_PROJECT_NAME}_lib_octagon PRIVATE ${CMAKE_PROJECT_NAME}_lib_point)
+
+target_link_libraries(${CMAKE_PROJECT_NAME}_exe PRIVATE ${CMAKE_PROJECT_NAME}_lib_utils)
 target_link_libraries(${CMAKE_PROJECT_NAME}_exe PRIVATE ${CMAKE_PROJECT_NAME}_lib_point)
 target_link_libraries(${CMAKE_PROJECT_NAME}_exe PRIVATE ${CMAKE_PROJECT_NAME}_lib_figure)
 target_link_libraries(${CMAKE_PROJECT_NAME}_exe PRIVATE ${CMAKE_PROJECT_NAME}_lib_triangle)

@@ -5,6 +5,11 @@ Point::Point (double xValue, double yValue) : x{xValue}, y{yValue} {}
 Point::Point (double value) : Point(value, value) {}
 Point::Point (const Point &other) : Point(other.x, other.y) {}
 
+Point::Point (Point &&other)  {
+    std::swap(x, other.x);
+    std::swap(y, other.y);
+}
+
 Point& Point::operator= (const Point &other) {
     if (this == &other) return *this;
     x = other.x;
@@ -12,27 +17,37 @@ Point& Point::operator= (const Point &other) {
     return *this; 
 }
 
-Point Point::operator+ (const Point &other) {
+Point& Point::operator= (Point &&other) {
+    std::swap(x, other.x);
+    std::swap(y, other.y);
+    return *this;
+}
+
+bool Point::operator== (const Point &other) const {
+    return Utils::cmpDouble(x, other.x) && Utils::cmpDouble(y, other.y);
+}
+
+Point Point::operator+ (const Point &other) const {
     return Point(x + other.x, y + other.y);
 }
 
-Point Point::operator- (const Point &other) {
+Point Point::operator- (const Point &other) const {
     return Point(x - other.x, y - other.y);
 }
 
-Point Point::operator* (double number) {
+Point Point::operator* (double number) const {
     return Point(number * x, number * y);
 }
 
-double Point::abs () {
+double Point::abs () const {
     return sqrt(x * x + y * y);
 }
 
-double Point::getX () {
+double Point::getX () const {
     return x;
 }
 
-double Point::getY () {
+double Point::getY () const {
     return y;
 }
 

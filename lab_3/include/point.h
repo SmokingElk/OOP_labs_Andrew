@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <math.h>
+#include "utils.h"
 
 class Point {
     private:
@@ -13,15 +14,19 @@ class Point {
         Point (double xValue, double yValue);
         Point (double value);
         Point (const Point &other);
+        Point (Point &&other);
         Point& operator= (const Point &other);
+        Point& operator= (Point &&other);
 
-        Point operator+ (const Point &other);
-        Point operator- (const Point &other);
-        Point operator* (double number);
+        bool operator== (const Point &other) const;
 
-        double abs ();
-        double getX ();
-        double getY ();
+        Point operator+ (const Point &other) const;
+        Point operator- (const Point &other) const;
+        Point operator* (double number) const;
+
+        double abs () const;
+        double getX () const;
+        double getY () const;
 
         friend std::ostream& operator<< (std::ostream& os, const Point &point);
         friend std::istream& operator>> (std::istream& is, Point &point);
