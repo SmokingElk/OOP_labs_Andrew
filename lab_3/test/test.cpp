@@ -550,7 +550,7 @@ TEST(octagon, area) {
     
     ASSERT_TRUE(Utils::cmpDouble(area, areaRef));
 }
-
+ 
 TEST(octagon, geometric_equivalence) {
     Octagon tr1(
         Point(-4.5 - cos(M_PI / 4.0), 5.0 + sin(M_PI / 4.0)),
