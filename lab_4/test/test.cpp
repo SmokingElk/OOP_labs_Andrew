@@ -842,6 +842,31 @@ TEST(array, cmp_not_equal_length) {
     ASSERT_TRUE(result == false);
 }
 
+TEST(array, concat) {
+    Array<int> array1;
+    
+    array1.append(1);
+    array1.append(2);
+    array1.append(3);
+    
+    Array<int> array2;
+    
+    array2.append(4);
+    array2.append(5);
+
+    array1.append(array2);
+
+    Array<int> arrayRef;
+
+    arrayRef.append(1);
+    arrayRef.append(2);
+    arrayRef.append(3);
+    arrayRef.append(4);
+    arrayRef.append(5);
+
+    ASSERT_TRUE(array1 == arrayRef);
+}
+
 int main (int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
