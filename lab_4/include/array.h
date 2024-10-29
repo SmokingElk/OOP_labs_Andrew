@@ -154,4 +154,14 @@ class Array {
         std::size_t getSize () const {
             return size;
         }
+
+        bool operator== (const Array<T> &other) const {
+            if (size != other.getSize()) return false;
+
+            for (int i = 0; i < size; i++) {
+                if (elems[i] != other[i]) return false;
+            }
+
+            return true;
+        }
 };

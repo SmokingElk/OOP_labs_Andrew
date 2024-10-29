@@ -8,6 +8,7 @@
 #include "../include/triangle.h"
 #include "../include/hexagon.h"
 #include "../include/octagon.h"
+#include "../include/array.h"
 
 TEST(utils, cmp_double_eq) {
     double a = 0.1 + 0.2;
@@ -72,7 +73,7 @@ TEST(point, cmp_not_eq_x_y) {
 }
 
 TEST(point, default_constructor) {
-    Point point;
+    Point<double> point;
     Point pointRef(0.0, 0.0);
     bool result = point == pointRef; 
 
@@ -139,9 +140,9 @@ TEST(point, abs) {
 }
 
 TEST(triangle, default_constructor) {
-    Triangle tr;
+    Triangle<double> tr;
     Triangle trRef(
-        Point(cos(0), sin(0)),
+        Point(cos(0.0), sin(0.0)),
         Point(cos(M_PI / 3.0 * 2.0), sin(M_PI / 3.0 * 2.0)),
         Point(cos(M_PI / 3.0 * 4.0), sin(M_PI / 3.0 * 4.0))
     );
@@ -271,8 +272,8 @@ TEST(triangle, cmp_not_eq) {
 // шестиугольник
 
 TEST(hexagon, default_constructor) {
-    Hexagon tr;
-    Hexagon trRef(
+    Hexagon<double> tr;
+    Hexagon<double> trRef(
         Point(cos(0.0), sin(0.0)),
         Point(cos(M_PI / 3.0), sin(M_PI / 3.0)),
         Point(cos(M_PI * 2.0 / 3.0), sin(M_PI * 2.0 / 3.0)),
@@ -441,7 +442,7 @@ TEST(hexagon, cmp_not_eq) {
 
 // восьмиугольник
 TEST(octagon, default_constructor) {
-    Octagon tr;
+    Octagon<double> tr;
     Octagon trRef(
         Point(cos(0.0), sin(0.0)),
         Point(cos(M_PI / 4.0), sin(M_PI / 4.0)),
@@ -631,6 +632,212 @@ TEST(octagon, cmp_not_eq) {
     );
 
     bool result = tr1 == tr2;
+
+    ASSERT_TRUE(result == false);
+}
+
+TEST(array, default_constructor) {
+    Array<int> array;
+    int result = array.getSize();
+
+    ASSERT_TRUE(result == 0);
+}
+
+TEST(array, append) {
+    Array<int> array;
+    array.append(0);
+    int firstElem = array[0];
+    int length = array.getSize();
+
+    ASSERT_TRUE(firstElem == 0 && length == 1);
+}
+
+TEST(array, extend) {
+    const int countToAdd = 100;
+
+    Array<int> array;
+    
+    ASSERT_NO_THROW({
+        for (int i = 0; i < countToAdd; i++) {
+            array.append(i);
+        }
+    });
+
+    int length = array.getSize();
+
+    ASSERT_TRUE(length == countToAdd);
+}
+
+TEST(array, delete_on_index) {
+    Array<int> array;
+
+    array.append(1);
+    array.append(2);
+    array.append(3);
+
+    array.deleteOnIndex(1);
+
+    int firstElem = array[0];
+    int secondElem = array[1];
+    int length = array.getSize();
+
+    ASSERT_TRUE(firstElem == 1 && secondElem == 3 && length == 2);
+}
+
+TEST(array, delete_on_index_last) {
+    Array<int> array;
+
+    array.append(1);
+    array.append(2);
+
+    array.deleteOnIndex(1);
+
+    int firstElem = array[0];
+    int length = array.getSize();
+
+    ASSERT_TRUE(firstElem == 1 && length == 1);
+}
+
+TEST(array, copy) {
+    Array<int> array;
+
+    array.append(1);
+    array.append(2);
+
+    Array<int> copyArray{array};
+
+    int firstElem = copyArray[0];
+    int secondElem = copyArray[1];
+    int length = copyArray.getSize();
+
+    int firstElemSrc = array[0];
+    int secondElemSrc = array[1];
+    int lengthSrc = array.getSize();    
+
+    ASSERT_TRUE(firstElem == 1 && secondElem == 2 && length == 2); 
+    ASSERT_TRUE(firstElemSrc == 1 && secondElemSrc == 2 && lengthSrc == 2);
+}
+
+TEST(array, move) {
+    Array<int> array;
+
+    array.append(1);
+    array.append(2);
+
+    Array<int> copyArray{std::move(array)};
+
+    int firstElem = copyArray[0];
+    int secondElem = copyArray[1];
+    int length = copyArray.getSize();
+    int lengthSrc = array.getSize();    
+
+    ASSERT_TRUE(firstElem == 1 && secondElem == 2 && length == 2 && lengthSrc == 0); 
+}
+
+TEST(array, assigment) {
+    Array<int> array;
+
+    array.append(1);
+    array.append(2);
+
+    Array<int> copyArray = array;
+
+    int firstElem = copyArray[0];
+    int secondElem = copyArray[1];
+    int length = copyArray.getSize();
+
+    int firstElemSrc = array[0];
+    int secondElemSrc = array[1];
+    int lengthSrc = array.getSize();    
+
+    ASSERT_TRUE(firstElem == 1 && secondElem == 2 && length == 2); 
+    ASSERT_TRUE(firstElemSrc == 1 && secondElemSrc == 2 && lengthSrc == 2);
+}
+
+TEST(array, assigment_move) {
+    Array<int> array;
+
+    array.append(1);
+    array.append(2);
+
+    Array<int> copyArray = std::move(array);
+
+    int firstElem = copyArray[0];
+    int secondElem = copyArray[1];
+    int length = copyArray.getSize();
+    int lengthSrc = array.getSize();    
+
+    ASSERT_TRUE(firstElem == 1 && secondElem == 2 && length == 2 && lengthSrc == 0); 
+}
+
+TEST(array, pointer_destruction) {
+    struct A {
+        bool *flagAddr;
+
+        A (bool *addr) : flagAddr{addr} {}
+
+        ~A () {
+            *flagAddr = true;
+        }
+    };   
+
+    bool destructed = false;
+
+    {
+        Array<A*> array;
+        array.append(new A(&destructed));
+    }
+
+    ASSERT_TRUE(destructed);
+}
+
+TEST(array, cmp_equal) {
+    Array<int> array;
+
+    array.append(1);
+    array.append(2);
+
+    Array<int> array2;
+
+    array2.append(1);
+    array2.append(2);
+
+    bool result = array == array2;
+
+    ASSERT_TRUE(result == true);
+}
+
+TEST(array, cmp_not_equal_elem) {
+    Array<int> array;
+
+    array.append(1);
+    array.append(3);
+    array.append(3);
+
+    Array<int> array2;
+
+    array2.append(1);
+    array2.append(2);
+    array2.append(3);
+
+    bool result = array == array2;
+
+    ASSERT_TRUE(result == false);
+}
+
+TEST(array, cmp_not_equal_length) {
+    Array<int> array;
+
+    array.append(1);
+    array.append(2);
+    array.append(3);
+
+    Array<int> array2;
+
+    array2.append(1);
+    array2.append(2);
+
+    bool result = array == array2;
 
     ASSERT_TRUE(result == false);
 }

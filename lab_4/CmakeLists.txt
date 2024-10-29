@@ -27,16 +27,11 @@ add_library(${CMAKE_PROJECT_NAME}_lib_utils src/utils.cpp)
 target_link_libraries(${CMAKE_PROJECT_NAME}_exe PRIVATE ${CMAKE_PROJECT_NAME}_lib_utils)
 
 # Добавление тестов
-# enable_testing()
+enable_testing()
 
-# add_executable(tests test/test.cpp)
-# target_link_libraries(tests ${CMAKE_PROJECT_NAME}_lib_utils)
-# target_link_libraries(tests ${CMAKE_PROJECT_NAME}_lib_point)
-# target_link_libraries(tests ${CMAKE_PROJECT_NAME}_lib_figure)
-# target_link_libraries(tests ${CMAKE_PROJECT_NAME}_lib_triangle)
-# target_link_libraries(tests ${CMAKE_PROJECT_NAME}_lib_hexagon)
-# target_link_libraries(tests ${CMAKE_PROJECT_NAME}_lib_octagon)
-# target_link_libraries(tests gtest_main)
+add_executable(tests test/test.cpp)
+target_link_libraries(tests ${CMAKE_PROJECT_NAME}_lib_utils)
+target_link_libraries(tests gtest_main)
 
-# # Добавление тестов в тестовый набор
-# add_test(NAME MyProjectTests COMMAND tests)
+# Добавление тестов в тестовый набор
+add_test(NAME MyProjectTests COMMAND tests)

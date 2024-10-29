@@ -123,14 +123,14 @@ class Octagon : public Figure<T> {
         Octagon (Point<T> pA, Point<T> pB, Point<T> pC, Point<T> pD, Point<T> pE, Point<T> pF, Point<T> pG, Point<T> pH) {
             checkCorrect(pA, pB, pC, pD, pE, pF, pG, pH);
 
-            a = std::make_unique<Point<T>>(*pA);
-            b = std::make_unique<Point<T>>(*pB);
-            c = std::make_unique<Point<T>>(*pC);
-            d = std::make_unique<Point<T>>(*pD);
-            e = std::make_unique<Point<T>>(*pE);
-            f = std::make_unique<Point<T>>(*pF);
-            g = std::make_unique<Point<T>>(*pG);
-            h = std::make_unique<Point<T>>(*pH);
+            a = std::make_unique<Point<T>>(pA);
+            b = std::make_unique<Point<T>>(pB);
+            c = std::make_unique<Point<T>>(pC);
+            d = std::make_unique<Point<T>>(pD);
+            e = std::make_unique<Point<T>>(pE);
+            f = std::make_unique<Point<T>>(pF);
+            g = std::make_unique<Point<T>>(pG);
+            h = std::make_unique<Point<T>>(pH);
         }
 
         Octagon (const Octagon &other) {

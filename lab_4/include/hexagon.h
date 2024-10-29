@@ -102,12 +102,12 @@ class Hexagon : public Figure<T> {
         Hexagon (Point<T> pA, Point<T> pB, Point<T> pC, Point<T> pD, Point<T> pE, Point<T> pF) {
             checkCorrect(pA, pB, pC, pD, pE, pF);
 
-            a = std::make_unique<Point<T>>(*pA);
-            b = std::make_unique<Point<T>>(*pB);
-            c = std::make_unique<Point<T>>(*pC);
-            d = std::make_unique<Point<T>>(*pD);
-            e = std::make_unique<Point<T>>(*pE);
-            f = std::make_unique<Point<T>>(*pF);
+            a = std::make_unique<Point<T>>(pA);
+            b = std::make_unique<Point<T>>(pB);
+            c = std::make_unique<Point<T>>(pC);
+            d = std::make_unique<Point<T>>(pD);
+            e = std::make_unique<Point<T>>(pE);
+            f = std::make_unique<Point<T>>(pF);
         }
 
         Hexagon (const Hexagon &other) {
