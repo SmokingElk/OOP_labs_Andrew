@@ -93,6 +93,7 @@ lab_4_exe_EXTERNAL_OBJECTS =
 lab_4_exe: CMakeFiles/lab_4_exe.dir/main.cpp.o
 lab_4_exe: CMakeFiles/lab_4_exe.dir/build.make
 lab_4_exe: liblab_4_lib_utils.a
+lab_4_exe: liblab_4_lib_ppm.a
 lab_4_exe: CMakeFiles/lab_4_exe.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspaces/OOP_labs_Andrew/lab_4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable lab_4_exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lab_4_exe.dir/link.txt --verbose=$(VERBOSE)

@@ -245,6 +245,7 @@ CMakeFiles/lab_4_exe.dir/main.cpp.o: /workspaces/OOP_labs_Andrew/lab_4/main.cpp 
   /usr/local/include/c++/14.2.0/pstl/glue_memory_defs.h \
   /usr/local/include/c++/14.2.0/pstl/execution_defs.h \
   /workspaces/OOP_labs_Andrew/lab_4/include/custom-concepts.h \
+  /workspaces/OOP_labs_Andrew/lab_4/include/rgb-24.h \
   /workspaces/OOP_labs_Andrew/lab_4/include/point.h \
   /usr/local/include/c++/14.2.0/fstream \
   /usr/local/include/c++/14.2.0/bits/codecvt.h \
@@ -280,16 +281,22 @@ CMakeFiles/lab_4_exe.dir/main.cpp.o: /workspaces/OOP_labs_Andrew/lab_4/main.cpp 
   /workspaces/OOP_labs_Andrew/lab_4/include/utils.h \
   /workspaces/OOP_labs_Andrew/lab_4/include/triangle.h \
   /workspaces/OOP_labs_Andrew/lab_4/include/figure.h \
+  /workspaces/OOP_labs_Andrew/lab_4/include/array.h \
   /workspaces/OOP_labs_Andrew/lab_4/include/hexagon.h \
   /workspaces/OOP_labs_Andrew/lab_4/include/octagon.h \
-  /workspaces/OOP_labs_Andrew/lab_4/include/array.h
+  /workspaces/OOP_labs_Andrew/lab_4/include/ppm.h \
+  /workspaces/OOP_labs_Andrew/lab_4/include/figure-renderer.h
 
 
-/workspaces/OOP_labs_Andrew/lab_4/include/array.h:
+/workspaces/OOP_labs_Andrew/lab_4/include/figure-renderer.h:
+
+/workspaces/OOP_labs_Andrew/lab_4/include/ppm.h:
 
 /workspaces/OOP_labs_Andrew/lab_4/include/octagon.h:
 
 /workspaces/OOP_labs_Andrew/lab_4/include/hexagon.h:
+
+/workspaces/OOP_labs_Andrew/lab_4/include/array.h:
 
 /workspaces/OOP_labs_Andrew/lab_4/include/figure.h:
 
@@ -635,6 +642,10 @@ CMakeFiles/lab_4_exe.dir/main.cpp.o: /workspaces/OOP_labs_Andrew/lab_4/main.cpp 
 
 /usr/local/include/c++/14.2.0/numbers:
 
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
+/usr/local/include/c++/14.2.0/pstl/glue_memory_defs.h:
+
 /usr/local/include/c++/14.2.0/bits/functional_hash.h:
 
 /usr/local/include/c++/14.2.0/bits/string_view.tcc:
@@ -757,8 +768,6 @@ CMakeFiles/lab_4_exe.dir/main.cpp.o: /workspaces/OOP_labs_Andrew/lab_4/main.cpp 
 
 /workspaces/OOP_labs_Andrew/lab_4/include/custom-concepts.h:
 
-/usr/local/include/c++/14.2.0/bits/align.h:
-
 /usr/local/include/c++/14.2.0/bits/stl_iterator_base_funcs.h:
 
 /usr/local/include/c++/14.2.0/bits/allocator.h:
@@ -803,6 +812,10 @@ CMakeFiles/lab_4_exe.dir/main.cpp.o: /workspaces/OOP_labs_Andrew/lab_4/main.cpp 
 
 /usr/include/linux/close_range.h:
 
+/usr/local/include/c++/14.2.0/bits/align.h:
+
+/workspaces/OOP_labs_Andrew/lab_4/include/rgb-24.h:
+
 /usr/local/include/c++/14.2.0/backward/binders.h:
 
 /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/ctype_inline.h:
@@ -844,7 +857,3 @@ CMakeFiles/lab_4_exe.dir/main.cpp.o: /workspaces/OOP_labs_Andrew/lab_4/main.cpp 
 /usr/local/include/c++/14.2.0/tr1/bessel_function.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
-
-/usr/local/include/c++/14.2.0/pstl/glue_memory_defs.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:

@@ -373,8 +373,9 @@ CMakeFiles/tests.dir/test/test.cpp.o: \
  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++io.h \
  /usr/local/include/c++/14.2.0/bits/fstream.tcc \
  /workspaces/OOP_labs_Andrew/lab_4/test/../include/custom-concepts.h \
+ /workspaces/OOP_labs_Andrew/lab_4/test/../include/rgb-24.h \
  /workspaces/OOP_labs_Andrew/lab_4/test/../include/figure.h \
+ /workspaces/OOP_labs_Andrew/lab_4/test/../include/array.h \
  /workspaces/OOP_labs_Andrew/lab_4/test/../include/triangle.h \
  /workspaces/OOP_labs_Andrew/lab_4/test/../include/hexagon.h \
- /workspaces/OOP_labs_Andrew/lab_4/test/../include/octagon.h \
- /workspaces/OOP_labs_Andrew/lab_4/test/../include/array.h
+ /workspaces/OOP_labs_Andrew/lab_4/test/../include/octagon.h

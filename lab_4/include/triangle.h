@@ -120,6 +120,16 @@ class Triangle : public Figure<T> {
             return Utils::STriangle(AB, BC, AC);
         }
 
+        std::unique_ptr<Array<Point<double>>> getPointsArray () override {
+            std::unique_ptr<Array<Point<double>>> points = std::make_unique<Array<Point<double>>>();
+
+            points->append(Point<double>(*a));
+            points->append(Point<double>(*b));
+            points->append(Point<double>(*c));
+
+            return points;
+        }
+
         bool operator== (const Triangle<T> &other) const {
             return *a == *other.a && *b == *other.b && *c == *other.c;
         }

@@ -407,16 +407,17 @@ CMakeFiles/tests.dir/test/test.cpp.o: /workspaces/OOP_labs_Andrew/lab_4/test/tes
   /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/c++io.h \
   /usr/local/include/c++/14.2.0/bits/fstream.tcc \
   /workspaces/OOP_labs_Andrew/lab_4/include/custom-concepts.h \
+  /workspaces/OOP_labs_Andrew/lab_4/include/rgb-24.h \
   /workspaces/OOP_labs_Andrew/lab_4/include/figure.h \
+  /workspaces/OOP_labs_Andrew/lab_4/include/array.h \
   /workspaces/OOP_labs_Andrew/lab_4/include/triangle.h \
   /workspaces/OOP_labs_Andrew/lab_4/include/hexagon.h \
-  /workspaces/OOP_labs_Andrew/lab_4/include/octagon.h \
-  /workspaces/OOP_labs_Andrew/lab_4/include/array.h
+  /workspaces/OOP_labs_Andrew/lab_4/include/octagon.h
 
-
-/workspaces/OOP_labs_Andrew/lab_4/include/array.h:
 
 /workspaces/OOP_labs_Andrew/lab_4/include/hexagon.h:
+
+/workspaces/OOP_labs_Andrew/lab_4/include/array.h:
 
 /workspaces/OOP_labs_Andrew/lab_4/include/figure.h:
 
@@ -883,6 +884,8 @@ _deps/googletest-src/googletest/include/gtest/gtest_prod.h:
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/workspaces/OOP_labs_Andrew/lab_4/include/rgb-24.h:
 
 /usr/local/include/c++/14.2.0/bits/enable_special_members.h:
 

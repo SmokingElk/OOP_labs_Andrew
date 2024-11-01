@@ -166,6 +166,19 @@ class Hexagon : public Figure<T> {
             return (*a - *b).abs() * sin(M_PI / 3) * 6.0;
         }
 
+        std::unique_ptr<Array<Point<double>>> getPointsArray () override {
+            std::unique_ptr<Array<Point<double>>> points = std::make_unique<Array<Point<double>>>();
+
+            points->append(Point<double>(*a));
+            points->append(Point<double>(*b));
+            points->append(Point<double>(*c));
+            points->append(Point<double>(*d));
+            points->append(Point<double>(*e));
+            points->append(Point<double>(*f));
+
+            return points;
+        }
+
         bool operator== (const Hexagon &other) const {
             return *a == *other.a && *b == *other.b && *c == *other.c && *d == *other.d && *e == *other.e && *f == *other.f;
         }   

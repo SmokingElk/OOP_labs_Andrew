@@ -17,6 +17,9 @@ class Point {
         Point (T value) : Point(value, value) {}
         Point (const Point<T> &other) : Point(other.x, other.y) {}
 
+        template <class TOther>
+        Point (const Point<TOther> &other) : Point(static_cast<T>(other.x), static_cast<T>(other.x)) {}
+
         Point (Point<T> &&other) {
             std::swap(x, other.x);
             std::swap(y, other.y);

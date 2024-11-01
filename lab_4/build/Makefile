@@ -198,6 +198,19 @@ lab_4_lib_utils/fast:
 .PHONY : lab_4_lib_utils/fast
 
 #=============================================================================
+# Target rules for targets named lab_4_lib_ppm
+
+# Build rule for target.
+lab_4_lib_ppm: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab_4_lib_ppm
+.PHONY : lab_4_lib_ppm
+
+# fast build rule for target.
+lab_4_lib_ppm/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_4_lib_ppm.dir/build.make CMakeFiles/lab_4_lib_ppm.dir/build
+.PHONY : lab_4_lib_ppm/fast
+
+#=============================================================================
 # Target rules for targets named tests
 
 # Build rule for target.
@@ -286,6 +299,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_4_exe.dir/build.make CMakeFiles/lab_4_exe.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/ppm.o: src/ppm.cpp.o
+.PHONY : src/ppm.o
+
+# target to build an object file
+src/ppm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_4_lib_ppm.dir/build.make CMakeFiles/lab_4_lib_ppm.dir/src/ppm.cpp.o
+.PHONY : src/ppm.cpp.o
+
+src/ppm.i: src/ppm.cpp.i
+.PHONY : src/ppm.i
+
+# target to preprocess a source file
+src/ppm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_4_lib_ppm.dir/build.make CMakeFiles/lab_4_lib_ppm.dir/src/ppm.cpp.i
+.PHONY : src/ppm.cpp.i
+
+src/ppm.s: src/ppm.cpp.s
+.PHONY : src/ppm.s
+
+# target to generate assembly for a file
+src/ppm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_4_lib_ppm.dir/build.make CMakeFiles/lab_4_lib_ppm.dir/src/ppm.cpp.s
+.PHONY : src/ppm.cpp.s
+
 src/utils.o: src/utils.cpp.o
 .PHONY : src/utils.o
 
@@ -352,11 +389,15 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... lab_4_exe"
+	@echo "... lab_4_lib_ppm"
 	@echo "... lab_4_lib_utils"
 	@echo "... tests"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/ppm.o"
+	@echo "... src/ppm.i"
+	@echo "... src/ppm.s"
 	@echo "... src/utils.o"
 	@echo "... src/utils.i"
 	@echo "... src/utils.s"

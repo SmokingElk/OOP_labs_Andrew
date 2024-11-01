@@ -199,6 +199,21 @@ class Octagon : public Figure<T> {
             return (*a - *e).abs() * sin(M_PI / 4.0) * 4.0;
         }
 
+        std::unique_ptr<Array<Point<double>>> getPointsArray () override {
+            std::unique_ptr<Array<Point<double>>> points = std::make_unique<Array<Point<double>>>();
+
+            points->append(Point<double>(*a));
+            points->append(Point<double>(*b));
+            points->append(Point<double>(*c));
+            points->append(Point<double>(*d));
+            points->append(Point<double>(*e));
+            points->append(Point<double>(*f));
+            points->append(Point<double>(*g));
+            points->append(Point<double>(*h));
+
+            return points;
+        }
+
         bool operator== (const Octagon &other) const {
             return *a == *other.a && *b == *other.b && *c == *other.c && *d == *other.d && 
                 *e == *other.e && *f == *other.f && *g == *other.g && *h == *other.h; 

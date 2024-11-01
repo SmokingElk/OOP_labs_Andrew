@@ -23,8 +23,10 @@ FetchContent_MakeAvailable(googletest)
 add_executable(${CMAKE_PROJECT_NAME}_exe main.cpp)
 
 add_library(${CMAKE_PROJECT_NAME}_lib_utils src/utils.cpp)
+add_library(${CMAKE_PROJECT_NAME}_lib_ppm src/ppm.cpp)
 
 target_link_libraries(${CMAKE_PROJECT_NAME}_exe PRIVATE ${CMAKE_PROJECT_NAME}_lib_utils)
+target_link_libraries(${CMAKE_PROJECT_NAME}_exe PRIVATE ${CMAKE_PROJECT_NAME}_lib_ppm)
 
 # Добавление тестов
 enable_testing()

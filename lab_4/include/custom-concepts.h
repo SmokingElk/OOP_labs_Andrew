@@ -1,5 +1,6 @@
 #pragma once
 #include <concepts>
+#include "rgb-24.h"
 
 template <class T> 
 concept Signable = std::is_arithmetic_v<T> && requires () { 
@@ -14,3 +15,8 @@ concept Arithmetic = Signable<T> && !(std::is_same_v<T, char> ||
 
 template <class T>
 concept RealType = std::is_same_v<double, T> || std::is_same_v<float, T>;
+
+template <class T>
+concept PrintColor = requires (T a, RGB24 b) {
+    { a << b } -> std::same_as<T>;
+};
