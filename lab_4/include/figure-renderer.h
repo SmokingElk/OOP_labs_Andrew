@@ -176,7 +176,7 @@ class FigureRenderer {
             return *this;
         }
 
-        template <class T>
+        template <PrintColor T>
         FigureRenderer& operator>> (T &stream) {
             for (int i = 0; i < viewWidth * viewHeight; i++) {
                 stream << frameBuffer[i];

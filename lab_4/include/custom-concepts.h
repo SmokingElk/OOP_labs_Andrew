@@ -18,5 +18,5 @@ concept RealType = std::is_same_v<double, T> || std::is_same_v<float, T>;
 
 template <class T>
 concept PrintColor = requires (T a, RGB24 b) {
-    { a << b } -> std::same_as<T>;
+    { a << b } -> std::same_as<T&>;
 };
