@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblab_3_lib_octagon.a CMakeFiles/lab_3_lib_octagon.dir/src/octagon.cpp.o
+/usr/bin/ranlib liblab_3_lib_octagon.a
