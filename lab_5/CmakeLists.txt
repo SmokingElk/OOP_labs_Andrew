@@ -23,11 +23,10 @@ FetchContent_MakeAvailable(googletest)
 add_executable(${CMAKE_PROJECT_NAME}_exe main.cpp)
 
 # Добавление тестов
-# enable_testing()
+enable_testing()
 
-# add_executable(tests test/test.cpp)
-# target_link_libraries(tests ${CMAKE_PROJECT_NAME}_lib_utils)
-# target_link_libraries(tests gtest_main)
+add_executable(tests test/test.cpp)
+target_link_libraries(tests gtest_main)
 
-# # Добавление тестов в тестовый набор
-# add_test(NAME MyProjectTests COMMAND tests)
+# Добавление тестов в тестовый набор
+add_test(NAME MyProjectTests COMMAND tests)

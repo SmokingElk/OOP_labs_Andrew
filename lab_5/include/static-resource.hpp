@@ -5,7 +5,7 @@
 #include <memory>
 #include <stdexcept>
 
-template <size_t poolSize>
+template <size_t poolSize, bool debug = false>
 class StaticResource : public std::pmr::memory_resource {
     private:
         struct AllocatedBlock {
@@ -23,12 +23,16 @@ class StaticResource : public std::pmr::memory_resource {
             if (allocatedBlocks.empty()) {
                 AllocatedBlock block(pool, bytes);
                 allocatedBlocks.push_back(block);
+
+                if constexpr (debug) std::cout << "Allocated in empty: " << static_cast<void*>(block.begin) << std::endl;
                 return block.begin;
             }
 
             if (allocatedBlocks.begin()->begin - pool >= bytes) {
                 AllocatedBlock block(pool, bytes);
                 allocatedBlocks.push_front(block);
+
+                if constexpr (debug) std::cout << "Allocated in begin: " << static_cast<void*>(block.begin) << std::endl;
                 return block.begin;
             }
 
@@ -38,6 +42,8 @@ class StaticResource : public std::pmr::memory_resource {
                 if (nextUsedBlock->begin - (usedBlock->begin + usedBlock->size) >= bytes) {
                     AllocatedBlock block(usedBlock->begin + usedBlock->size, bytes);
                     allocatedBlocks.insert(nextUsedBlock, block);
+
+                    if constexpr (debug) std::cout << "Allocated in middle: " << static_cast<void*>(block.begin) << std::endl;
                     return block.begin;
                 }
             }
@@ -46,6 +52,8 @@ class StaticResource : public std::pmr::memory_resource {
             if ((pool + poolSize) - (lastBlock->begin + lastBlock->size) >= bytes) {
                 AllocatedBlock block(lastBlock->begin + lastBlock->size, bytes);
                 allocatedBlocks.push_back(block);
+
+                if constexpr (debug) std::cout << "Allocated in end: " << static_cast<void*>(block.begin) << std::endl;
                 return block.begin;
             }
 
@@ -56,6 +64,7 @@ class StaticResource : public std::pmr::memory_resource {
             for (auto it = allocatedBlocks.begin(); it != allocatedBlocks.end(); ++it) {
                 if (it->begin == ptr) {
                     allocatedBlocks.erase(it);
+                    if constexpr (debug) std::cout << "Deallocated: " << ptr << std::endl;
                     return;
                 }
             }

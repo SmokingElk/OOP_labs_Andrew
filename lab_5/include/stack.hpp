@@ -93,6 +93,7 @@ class Stack {
                 DestructionStrategy (StackAllocator<T> allocatorObject) : allocator{allocatorObject} {}
 
                 void operator() (StackItem<T> *ptr) {
+                    ptr->~StackItem();
                     allocator.deallocate(ptr, 1);
                 }
         };
@@ -100,62 +101,52 @@ class Stack {
         StackAllocator<T> allocator;
         std::shared_ptr<StackItem<T>> topItem{nullptr};
 
-        void copyStackBody (const Stack &other) {
-            std::shared_ptr<StackItem<T>> tail(nullptr, DestructionStrategy(allocator));
-
-            for (auto it = other.begin(); it != other.end(); ++it) {
-                auto itemP = allocator.allocate(1);
-                allocator.construct(itemP, *it);
-                std::shared_ptr<StackItem<T>> item(itemP, allocator);
-                if (tail != nullptr) tail->next = item;
-                tail = item;
-                if (it == other.begin()) topItem = tail;
-            }
-        }
-
     public:
-
         Stack (StackAllocator<T> allocatorObject) : allocator{allocatorObject} {}
-        
-        Stack (const Stack &other) {
-            allocator = other.allocatorObject;
-            copyStackBody(other); 
+
+        bool operator== (const Stack &other) const {
+            auto it1 = begin(), it2 = other.begin();
+
+            for (; it1 != end() && it2 != end(); ++it1, ++it2) {
+                if (*it1 != *it2) return false;
+            }
+
+            return it1 == end() && it2 == end();
         }
 
-        Stack (Stack &&other) {
-            allocator = std::move(other.allocatorObject);
-            topItem = std::move(other.topItem);
-        }
-
-        Stack& operator= (const Stack &other) {
-            if (this == &other) return *this;
-
-            topItem.reset();
-            copyStackBody(other);
-            return *this;
-        }
-
-        Stack& operator= (Stack &&other) {
-            allocator = std::move(other.allocatorObject);
-            
-            topItem.reset();
-            topItem = std::move(other.topItem);
-            return *this;
+        bool operator!= (const Stack &other) const {
+            return !(*this == other);
         }
 
         StackIter<T, false> begin () {
             return StackIter<T, false>(topItem);
         }
 
-        StackIter<T, false> end () {
-            return StackIter<T, false>(nullptr);
-        }
-
         StackIter<T, true> begin () const {
             return StackIter<T, true>(topItem);
         }
 
+        StackIter<T, false> end () {
+            return StackIter<T, false>(nullptr);
+        }
+
         StackIter<T, true> end () const {
+            return StackIter<T, true>(nullptr);
+        }
+
+        StackIter<T, true> cbegin () {
+            return StackIter<T, true>(topItem);
+        }
+
+        StackIter<T, true> cbegin () const {
+            return StackIter<T, true>(topItem);
+        }
+
+        StackIter<T, true> cend () {
+            return StackIter<T, true>(nullptr);
+        }
+
+        StackIter<T, true> cend () const {
             return StackIter<T, true>(nullptr);
         }
 
@@ -164,6 +155,8 @@ class Stack {
         }
 
         T top () {
+            if (empty()) throw std::logic_error("Trying to get top of empty stack");
+
             return topItem->element;
         }
 
@@ -176,8 +169,8 @@ class Stack {
         }
 
         void pop () {
-            if (empty()) return;
-            
+            if (empty()) throw std::logic_error("Trying to pop from empty stack");
+
             topItem = std::move(topItem->next);
         }
 };
