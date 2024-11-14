@@ -20,6 +20,8 @@ class StaticResource : public std::pmr::memory_resource {
 
     public:
         void* do_allocate (size_t bytes, size_t alignment) override {
+            if (bytes >= poolSize) throw std::bad_alloc();
+            
             if (allocatedBlocks.empty()) {
                 AllocatedBlock block(pool, bytes);
                 allocatedBlocks.push_back(block);

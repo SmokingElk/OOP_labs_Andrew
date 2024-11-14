@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 #include <memory_resource>
 #include <iostream>
+#include <stdexcept>
 
 #include "../include/static-resource.hpp"
 #include "../include/stack.hpp"
@@ -164,6 +165,15 @@ TEST(allocator, dealloc_some) {
 
     bool result = counter == 0;
     ASSERT_TRUE(result == true);
+}
+
+TEST(allocator, bad_alloc) {
+    StaticResource<1024> resource;
+    StackAllocator<int> allocator(&resource);
+    
+    ASSERT_THROW({
+        auto ptr = allocator.allocate(1025);
+    }, std::bad_alloc);
 }
 
 TEST(stack, create_empty) {
