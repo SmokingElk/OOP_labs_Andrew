@@ -1,0 +1,1 @@
+/usr/local/bin/c++  -Werror=maybe-uninitialized CMakeFiles/lab_6_exe.dir/main.cpp.o -o lab_6_exe  liblab_6_lib_Game.a liblab_6_lib_FactoryRandom.a liblab_6_lib_FactoryFile.a liblab_6_lib_Pirate.a liblab_6_lib_Privateer.a liblab_6_lib_Rakyat.a liblab_6_lib_ObserverStdout.a liblab_6_lib_ObserverFile.a liblab_6_lib_NPC.a liblab_6_lib_utils.a 
