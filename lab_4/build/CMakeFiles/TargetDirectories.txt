@@ -1,5 +1,6 @@
 /workspaces/OOP_labs_Andrew/lab_4/build/CMakeFiles/lab_4_exe.dir
 /workspaces/OOP_labs_Andrew/lab_4/build/CMakeFiles/lab_4_lib_utils.dir
+/workspaces/OOP_labs_Andrew/lab_4/build/CMakeFiles/lab_4_lib_rgb_24.dir
 /workspaces/OOP_labs_Andrew/lab_4/build/CMakeFiles/lab_4_lib_ppm.dir
 /workspaces/OOP_labs_Andrew/lab_4/build/CMakeFiles/tests.dir
 /workspaces/OOP_labs_Andrew/lab_4/build/CMakeFiles/test.dir

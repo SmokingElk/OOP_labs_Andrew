@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblab_4_lib_rgb_24.a "CMakeFiles/lab_4_lib_rgb_24.dir/src/rgb-24.cpp.o"
+/usr/bin/ranlib liblab_4_lib_rgb_24.a

@@ -196,8 +196,42 @@ CMakeFiles/lab_1_exe.dir/main.cpp.o: /workspaces/OOP_labs_Andrew/lab_1/main.cpp 
   /usr/local/include/c++/14.2.0/bits/ostream.tcc \
   /usr/local/include/c++/14.2.0/istream \
   /usr/local/include/c++/14.2.0/bits/istream.tcc \
-  /workspaces/OOP_labs_Andrew/lab_1/include/chocolate_slicer.h
+  /workspaces/OOP_labs_Andrew/lab_1/include/chocolate_slicer.h \
+  /usr/local/include/c++/14.2.0/functional \
+  /usr/local/include/c++/14.2.0/bits/std_function.h \
+  /usr/local/include/c++/14.2.0/unordered_map \
+  /usr/local/include/c++/14.2.0/bits/unordered_map.h \
+  /usr/local/include/c++/14.2.0/bits/hashtable.h \
+  /usr/local/include/c++/14.2.0/bits/hashtable_policy.h \
+  /usr/local/include/c++/14.2.0/ext/aligned_buffer.h \
+  /usr/local/include/c++/14.2.0/bits/enable_special_members.h \
+  /usr/local/include/c++/14.2.0/bits/node_handle.h \
+  /usr/local/include/c++/14.2.0/bits/erase_if.h \
+  /usr/local/include/c++/14.2.0/vector \
+  /usr/local/include/c++/14.2.0/bits/stl_uninitialized.h \
+  /usr/local/include/c++/14.2.0/bits/stl_vector.h \
+  /usr/local/include/c++/14.2.0/bits/stl_bvector.h \
+  /usr/local/include/c++/14.2.0/bits/vector.tcc \
+  /usr/local/include/c++/14.2.0/array
 
+
+/usr/local/include/c++/14.2.0/array:
+
+/usr/local/include/c++/14.2.0/bits/stl_bvector.h:
+
+/usr/local/include/c++/14.2.0/bits/stl_uninitialized.h:
+
+/usr/local/include/c++/14.2.0/vector:
+
+/usr/local/include/c++/14.2.0/bits/erase_if.h:
+
+/usr/local/include/c++/14.2.0/bits/node_handle.h:
+
+/usr/local/include/c++/14.2.0/bits/enable_special_members.h:
+
+/usr/local/include/c++/14.2.0/bits/hashtable_policy.h:
+
+/usr/local/include/c++/14.2.0/bits/unordered_map.h:
 
 /workspaces/OOP_labs_Andrew/lab_1/include/chocolate_slicer.h:
 
@@ -235,6 +269,8 @@ CMakeFiles/lab_1_exe.dir/main.cpp.o: /workspaces/OOP_labs_Andrew/lab_1/main.cpp 
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
+/usr/local/include/c++/14.2.0/functional:
+
 /usr/include/wctype.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
@@ -256,6 +292,8 @@ CMakeFiles/lab_1_exe.dir/main.cpp.o: /workspaces/OOP_labs_Andrew/lab_1/main.cpp 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/local/include/c++/14.2.0/bits/vector.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
@@ -469,6 +507,8 @@ CMakeFiles/lab_1_exe.dir/main.cpp.o: /workspaces/OOP_labs_Andrew/lab_1/main.cpp 
 
 /usr/include/ctype.h:
 
+/usr/local/include/c++/14.2.0/bits/std_function.h:
+
 /usr/local/include/c++/14.2.0/bits/localefwd.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
@@ -511,6 +551,8 @@ CMakeFiles/lab_1_exe.dir/main.cpp.o: /workspaces/OOP_labs_Andrew/lab_1/main.cpp 
 
 /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/gthr.h:
 
+/usr/local/include/c++/14.2.0/unordered_map:
+
 /usr/local/lib/gcc/x86_64-linux-gnu/14.2.0/include-fixed/pthread.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
@@ -518,6 +560,8 @@ CMakeFiles/lab_1_exe.dir/main.cpp.o: /workspaces/OOP_labs_Andrew/lab_1/main.cpp 
 /usr/include/locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/local/include/c++/14.2.0/bits/hashtable.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
@@ -538,6 +582,8 @@ CMakeFiles/lab_1_exe.dir/main.cpp.o: /workspaces/OOP_labs_Andrew/lab_1/main.cpp 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/local/include/c++/14.2.0/ext/aligned_buffer.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
@@ -568,6 +614,8 @@ CMakeFiles/lab_1_exe.dir/main.cpp.o: /workspaces/OOP_labs_Andrew/lab_1/main.cpp 
 /usr/local/include/c++/14.2.0/string:
 
 /usr/local/include/c++/14.2.0/bits/functexcept.h:
+
+/usr/local/include/c++/14.2.0/bits/stl_vector.h:
 
 /usr/local/include/c++/14.2.0/bits/iterator_concepts.h:
 

@@ -3,7 +3,6 @@
 #include <math.h>
 #include "array.h"
 #include "figure.h"
-#include "ppm.h"
 #include "rgb-24.h"
 #include "ppm.h"
 #include "custom-concepts.h"
