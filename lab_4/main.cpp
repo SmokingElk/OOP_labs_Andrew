@@ -8,7 +8,6 @@
 #include "include/octagon.h"
 #include "include/array.h"
 #include "include/ppm.h"
-#include "include/rgb-24.h"
 #include "include/figure-renderer.h"
 
 using FigureRendering::FigureRenderer;

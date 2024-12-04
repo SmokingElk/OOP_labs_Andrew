@@ -198,4 +198,20 @@ CMakeFiles/lab_1_exe.dir/main.cpp.o
  /usr/local/include/c++/14.2.0/istream
  /usr/local/include/c++/14.2.0/bits/istream.tcc
  /workspaces/OOP_labs_Andrew/lab_1/include/chocolate_slicer.h
+ /usr/local/include/c++/14.2.0/functional
+ /usr/local/include/c++/14.2.0/bits/std_function.h
+ /usr/local/include/c++/14.2.0/unordered_map
+ /usr/local/include/c++/14.2.0/bits/unordered_map.h
+ /usr/local/include/c++/14.2.0/bits/hashtable.h
+ /usr/local/include/c++/14.2.0/bits/hashtable_policy.h
+ /usr/local/include/c++/14.2.0/ext/aligned_buffer.h
+ /usr/local/include/c++/14.2.0/bits/enable_special_members.h
+ /usr/local/include/c++/14.2.0/bits/node_handle.h
+ /usr/local/include/c++/14.2.0/bits/erase_if.h
+ /usr/local/include/c++/14.2.0/vector
+ /usr/local/include/c++/14.2.0/bits/stl_uninitialized.h
+ /usr/local/include/c++/14.2.0/bits/stl_vector.h
+ /usr/local/include/c++/14.2.0/bits/stl_bvector.h
+ /usr/local/include/c++/14.2.0/bits/vector.tcc
+ /usr/local/include/c++/14.2.0/array
 

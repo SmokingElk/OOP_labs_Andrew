@@ -79,6 +79,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/lab_4_exe.dir/DependInfo.cmake"
   "CMakeFiles/lab_4_lib_utils.dir/DependInfo.cmake"
+  "CMakeFiles/lab_4_lib_rgb_24.dir/DependInfo.cmake"
   "CMakeFiles/lab_4_lib_ppm.dir/DependInfo.cmake"
   "CMakeFiles/tests.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"

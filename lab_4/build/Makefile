@@ -198,6 +198,19 @@ lab_4_lib_utils/fast:
 .PHONY : lab_4_lib_utils/fast
 
 #=============================================================================
+# Target rules for targets named lab_4_lib_rgb_24
+
+# Build rule for target.
+lab_4_lib_rgb_24: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab_4_lib_rgb_24
+.PHONY : lab_4_lib_rgb_24
+
+# fast build rule for target.
+lab_4_lib_rgb_24/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_4_lib_rgb_24.dir/build.make CMakeFiles/lab_4_lib_rgb_24.dir/build
+.PHONY : lab_4_lib_rgb_24/fast
+
+#=============================================================================
 # Target rules for targets named lab_4_lib_ppm
 
 # Build rule for target.
@@ -323,6 +336,30 @@ src/ppm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_4_lib_ppm.dir/build.make CMakeFiles/lab_4_lib_ppm.dir/src/ppm.cpp.s
 .PHONY : src/ppm.cpp.s
 
+src/rgb-24.o: src/rgb-24.cpp.o
+.PHONY : src/rgb-24.o
+
+# target to build an object file
+src/rgb-24.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_4_lib_rgb_24.dir/build.make CMakeFiles/lab_4_lib_rgb_24.dir/src/rgb-24.cpp.o
+.PHONY : src/rgb-24.cpp.o
+
+src/rgb-24.i: src/rgb-24.cpp.i
+.PHONY : src/rgb-24.i
+
+# target to preprocess a source file
+src/rgb-24.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_4_lib_rgb_24.dir/build.make CMakeFiles/lab_4_lib_rgb_24.dir/src/rgb-24.cpp.i
+.PHONY : src/rgb-24.cpp.i
+
+src/rgb-24.s: src/rgb-24.cpp.s
+.PHONY : src/rgb-24.s
+
+# target to generate assembly for a file
+src/rgb-24.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_4_lib_rgb_24.dir/build.make CMakeFiles/lab_4_lib_rgb_24.dir/src/rgb-24.cpp.s
+.PHONY : src/rgb-24.cpp.s
+
 src/utils.o: src/utils.cpp.o
 .PHONY : src/utils.o
 
@@ -390,6 +427,7 @@ help:
 	@echo "... gtest_main"
 	@echo "... lab_4_exe"
 	@echo "... lab_4_lib_ppm"
+	@echo "... lab_4_lib_rgb_24"
 	@echo "... lab_4_lib_utils"
 	@echo "... tests"
 	@echo "... main.o"
@@ -398,6 +436,9 @@ help:
 	@echo "... src/ppm.o"
 	@echo "... src/ppm.i"
 	@echo "... src/ppm.s"
+	@echo "... src/rgb-24.o"
+	@echo "... src/rgb-24.i"
+	@echo "... src/rgb-24.s"
 	@echo "... src/utils.o"
 	@echo "... src/utils.i"
 	@echo "... src/utils.s"
