@@ -1,81 +1,81 @@
 20
 2
-9
-44
-Privateer #0
-1
-51
-38
-Pirate #1
-1
-8
 19
-Pirate #2
-3
-88
+0
+Privateer #0
 2
-Rakyat #3
-2
-99
 29
-Privateer #4
+13
+Privateer #1
 3
-14
-25
-Rakyat #5
+21
+32
+Rakyat #2
 2
-61
-45
-Privateer #6
+10
+2
+Privateer #3
+3
+90
+17
+Rakyat #4
+2
+15
+8
+Privateer #5
+3
+74
+15
+Rakyat #6
+3
+98
+3
+Rakyat #7
+2
+38
 1
-51
-35
-Pirate #7
-3
-65
-46
-Rakyat #8
+Privateer #8
 2
-9
-12
+14
+23
 Privateer #9
 1
-70
-21
+99
+42
 Pirate #10
 3
-7
-22
+15
+23
 Rakyat #11
-1
-15
-32
-Pirate #12
 2
-97
-20
+80
+44
+Privateer #12
+2
+42
+6
 Privateer #13
-1
-13
-19
-Pirate #14
 3
-38
-35
-Rakyat #15
-3
-86
+30
 49
-Rakyat #16
-3
-29
-2
-Rakyat #17
+Rakyat #14
 1
-10
-17
-Pirate #18
+50
+14
+Pirate #15
+3
+37
+38
+Rakyat #16
 2
-15
-26
-Privateer #19
+49
+38
+Privateer #17
+2
+53
+28
+Privateer #18
+1
+48
+44
+Pirate #19
