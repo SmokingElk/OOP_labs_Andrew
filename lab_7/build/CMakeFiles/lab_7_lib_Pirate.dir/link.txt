@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblab_7_lib_Pirate.a CMakeFiles/lab_7_lib_Pirate.dir/src/NPCs/Pirate.cpp.o
+/usr/bin/ranlib liblab_7_lib_Pirate.a

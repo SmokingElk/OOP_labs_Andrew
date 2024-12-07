@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblab_7_lib_ObserverMurderStdout.a CMakeFiles/lab_7_lib_ObserverMurderStdout.dir/src/observers/ObserverMurderStdout.cpp.o
+/usr/bin/ranlib liblab_7_lib_ObserverMurderStdout.a

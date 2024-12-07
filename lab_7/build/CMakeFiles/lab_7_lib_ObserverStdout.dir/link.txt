@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblab_7_lib_ObserverStdout.a CMakeFiles/lab_7_lib_ObserverStdout.dir/src/observers/ObserverStdout.cpp.o
+/usr/bin/ranlib liblab_7_lib_ObserverStdout.a

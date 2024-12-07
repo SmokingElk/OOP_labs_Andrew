@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblab_7_lib_FactoryFile.a CMakeFiles/lab_7_lib_FactoryFile.dir/src/factories/FactoryFile.cpp.o
+/usr/bin/ranlib liblab_7_lib_FactoryFile.a
