@@ -156,24 +156,6 @@ TEST(npc, unique_name_free) {
     });
 }
 
-TEST(npc, enough_close) {
-    Pirate pirate1(Point(1, 2), "pirate1");
-    std::shared_ptr<Pirate> pirate2 = std::make_shared<Pirate>(Point(5, 5), "pirate2");
-    
-    bool result = pirate1.isClose(pirate2);
-
-    ASSERT_TRUE(result == true);
-}
-
-TEST(npc, not_enough_close) {
-    Pirate pirate1(Point(1, 2), "pirate1");
-    std::shared_ptr<Pirate> pirate2 = std::make_shared<Pirate>(Point(6, 5), "pirate2");
-    
-    bool result = pirate1.isClose(pirate2);
-
-    ASSERT_TRUE(result == false);
-}
-
 TEST(npc, getter_pos) {
     Pirate pirate1(Point(1, 2), "pirate1");
 
@@ -190,7 +172,7 @@ TEST(npc, getter_name) {
     ASSERT_TRUE(result == "pirate1");
 }
 
-TEST(rakyat, accept_true) {
+TEST(npc, accept_true) {
     std::shared_ptr<NPC> attacker = std::make_shared<Pirate>(Point(6, 5), "attacker");
     std::shared_ptr<NPC> defender = std::make_shared<Privateer>(Point(6, 5), "defender");
 
@@ -199,7 +181,7 @@ TEST(rakyat, accept_true) {
     ASSERT_TRUE(result == true);
 }
 
-TEST(rakyat, accept_false) {
+TEST(npc, accept_false) {
     std::shared_ptr<NPC> attacker = std::make_shared<Pirate>(Point(6, 5), "attacker");
     std::shared_ptr<NPC> defender = std::make_shared<Rakyat>(Point(6, 5), "defender");
 
@@ -211,9 +193,12 @@ TEST(rakyat, accept_false) {
 TEST(pirate, constructor) {
     Pirate pirate(Point(3, 5), "pirate.constructor");
 
-    NPCType result = pirate.getType();
+    NPCType resultType = pirate.getType();
+    std::size_t resultMovePoints = pirate.getMovePoints();
+    std::size_t resultKillDistance = pirate.getKillDistance();
+    char resultSprite = pirate.getSprite();
 
-    ASSERT_TRUE(result == NPCType::PirateType);
+    ASSERT_TRUE(resultType == NPCType::PirateType && resultMovePoints == 20 && resultKillDistance == 4 && resultSprite == 'V');
 }
 
 TEST(pirate, win_pirate) {
@@ -243,12 +228,42 @@ TEST(pirate, win_rakyat) {
     ASSERT_TRUE(result == false);
 }
 
+TEST(pirate, close_enough) {
+    std::shared_ptr<NPC> attacker = std::make_shared<Pirate>(Point(0, 0), "attacker");
+    std::shared_ptr<NPC> defender = std::make_shared<Rakyat>(Point(0, 2), "defender");
+
+    bool result = attacker->isClose(defender);
+
+    ASSERT_TRUE(result == true);
+}
+
+TEST(pirate, close_not_enough) {
+    std::shared_ptr<NPC> attacker = std::make_shared<Pirate>(Point(0, 0), "attacker");
+    std::shared_ptr<NPC> defender = std::make_shared<Rakyat>(Point(0, 8), "defender");
+
+    bool result = attacker->isClose(defender);
+
+    ASSERT_TRUE(result == false);
+}
+
+TEST(pirate, move) {
+    Pirate pirate(Point(25), "pirate");
+    pirate.move(100, 50);
+
+    auto result = pirate.getPos();
+
+    ASSERT_TRUE(0 <= result.getX() && result.getX() < 100 && 0 <= result.getY() && result.getY() < 50);
+}
+
 TEST(privateer, constructor) {
     Privateer privateer(Point(3, 5), "privateer.constructor");
 
-    NPCType result = privateer.getType();
+    NPCType resultType = privateer.getType();
+    std::size_t resultMovePoints = privateer.getMovePoints();
+    std::size_t resultKillDistance = privateer.getKillDistance();
+    char resultSprite = privateer.getSprite();
 
-    ASSERT_TRUE(result == NPCType::PrivateerType);
+    ASSERT_TRUE(resultType == NPCType::PrivateerType && resultMovePoints == 30 && resultKillDistance == 3 && resultSprite == 'H');
 }
 
 TEST(privateer, win_pirate) {
@@ -278,12 +293,42 @@ TEST(privateer, win_rakyat) {
     ASSERT_TRUE(result == true);
 }
 
+TEST(privateer, close_enough) {
+    std::shared_ptr<NPC> attacker = std::make_shared<Privateer>(Point(0, 0), "attacker");
+    std::shared_ptr<NPC> defender = std::make_shared<Rakyat>(Point(0, 2), "defender");
+
+    bool result = attacker->isClose(defender);
+
+    ASSERT_TRUE(result == true);
+}
+
+TEST(privateer, close_not_enough) {
+    std::shared_ptr<NPC> attacker = std::make_shared<Privateer>(Point(0, 0), "attacker");
+    std::shared_ptr<NPC> defender = std::make_shared<Rakyat>(Point(0, 8), "defender");
+
+    bool result = attacker->isClose(defender);
+
+    ASSERT_TRUE(result == false);
+}
+
+TEST(privateer, move) {
+    Privateer privateer(Point(25), "privateer");
+    privateer.move(100, 50);
+
+    auto result = privateer.getPos();
+
+    ASSERT_TRUE(0 <= result.getX() && result.getX() < 100 && 0 <= result.getY() && result.getY() < 50);
+}
+
 TEST(rakyat, constructor) {
     Rakyat rakyat(Point(3, 5), "rakyat.constructor");
 
-    NPCType result = rakyat.getType();
+    NPCType resultType = rakyat.getType();
+    std::size_t resultMovePoints = rakyat.getMovePoints();
+    std::size_t resultKillDistance = rakyat.getKillDistance();
+    char resultSprite = rakyat.getSprite();
 
-    ASSERT_TRUE(result == NPCType::RakyatType);
+    ASSERT_TRUE(resultType == NPCType::RakyatType && resultMovePoints == 5 && resultKillDistance == 5 && resultSprite == 'J');
 }
 
 TEST(rakyat, win_pirate) {
@@ -311,6 +356,33 @@ TEST(rakyat, win_rakyat) {
     bool result = attacker.fight(defender);
 
     ASSERT_TRUE(result == false);
+}
+
+TEST(rakyat, close_enough) {
+    std::shared_ptr<NPC> attacker = std::make_shared<Rakyat>(Point(0, 0), "attacker");
+    std::shared_ptr<NPC> defender = std::make_shared<Rakyat>(Point(0, 2), "defender");
+
+    bool result = attacker->isClose(defender);
+
+    ASSERT_TRUE(result == true);
+}
+
+TEST(rakyat, close_not_enough) {
+    std::shared_ptr<NPC> attacker = std::make_shared<Rakyat>(Point(0, 0), "attacker");
+    std::shared_ptr<NPC> defender = std::make_shared<Rakyat>(Point(0, 8), "defender");
+
+    bool result = attacker->isClose(defender);
+
+    ASSERT_TRUE(result == false);
+}
+
+TEST(rakyat, move) {
+    Rakyat rakyat(Point(25), "rakyat");
+    rakyat.move(100, 50);
+
+    auto result = rakyat.getPos();
+
+    ASSERT_TRUE(0 <= result.getX() && result.getX() < 100 && 0 <= result.getY() && result.getY() < 50);
 }
 
 TEST(random_factory, create_pirate) {

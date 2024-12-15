@@ -1,2 +1,0 @@
-/usr/bin/ar qc liblab_4_lib_ppm.a CMakeFiles/lab_4_lib_ppm.dir/src/ppm.cpp.o
-/usr/bin/ranlib liblab_4_lib_ppm.a

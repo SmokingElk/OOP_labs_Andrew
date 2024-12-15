@@ -1,2 +1,0 @@
-/usr/bin/ar qc liblab_6_lib_ObserverFile.a CMakeFiles/lab_6_lib_ObserverFile.dir/src/observers/ObserverFile.cpp.o
-/usr/bin/ranlib liblab_6_lib_ObserverFile.a

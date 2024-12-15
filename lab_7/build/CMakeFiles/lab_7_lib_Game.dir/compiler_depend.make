@@ -330,54 +330,8 @@ CMakeFiles/lab_7_lib_Game.dir/src/Game.cpp.o: /workspaces/OOP_labs_Andrew/lab_7/
   /usr/local/include/c++/14.2.0/bits/stl_heap.h \
   /usr/local/include/c++/14.2.0/bits/stl_queue.h \
   /workspaces/OOP_labs_Andrew/lab_7/include/observers/ObserverFile.h \
-  /workspaces/OOP_labs_Andrew/lab_7/include/MoveManager.h \
-  /usr/local/include/c++/14.2.0/chrono \
-  /usr/local/include/c++/14.2.0/bits/stl_algo.h \
-  /usr/local/include/c++/14.2.0/bits/algorithmfwd.h \
-  /usr/local/include/c++/14.2.0/bits/uniform_int_dist.h \
-  /usr/local/include/c++/14.2.0/bits/chrono_io.h \
-  /usr/local/include/c++/14.2.0/iomanip \
-  /usr/local/include/c++/14.2.0/locale \
-  /usr/local/include/c++/14.2.0/bits/locale_facets_nonio.h \
-  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/time_members.h \
-  /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/messages_members.h \
-  /usr/include/libintl.h \
-  /usr/local/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
-  /usr/local/include/c++/14.2.0/bits/locale_conv.h \
-  /usr/local/include/c++/14.2.0/bits/quoted_string.h \
-  /usr/local/include/c++/14.2.0/format \
-  /usr/local/include/c++/14.2.0/array \
-  /usr/local/include/c++/14.2.0/charconv \
-  /usr/local/include/c++/14.2.0/optional \
-  /usr/local/include/c++/14.2.0/bits/enable_special_members.h \
-  /usr/local/include/c++/14.2.0/span \
-  /usr/local/include/c++/14.2.0/variant \
-  /usr/local/include/c++/14.2.0/bits/unicode.h \
-  /usr/local/include/c++/14.2.0/bits/unicode-data.h \
   /workspaces/OOP_labs_Andrew/lab_7/include/MapDrawer.h
 
-
-/usr/local/include/c++/14.2.0/bits/unicode-data.h:
-
-/usr/local/include/c++/14.2.0/bits/unicode.h:
-
-/usr/local/include/c++/14.2.0/variant:
-
-/usr/local/include/c++/14.2.0/optional:
-
-/usr/local/include/c++/14.2.0/bits/quoted_string.h:
-
-/usr/local/include/c++/14.2.0/bits/locale_facets_nonio.tcc:
-
-/usr/include/libintl.h:
-
-/usr/local/include/c++/14.2.0/locale:
-
-/usr/local/include/c++/14.2.0/iomanip:
-
-/usr/local/include/c++/14.2.0/bits/algorithmfwd.h:
-
-/usr/local/include/c++/14.2.0/chrono:
 
 /workspaces/OOP_labs_Andrew/lab_7/include/observers/ObserverFile.h:
 
@@ -420,8 +374,6 @@ CMakeFiles/lab_7_lib_Game.dir/src/Game.cpp.o: /workspaces/OOP_labs_Andrew/lab_7/
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
-/usr/local/include/c++/14.2.0/charconv:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
@@ -488,8 +440,6 @@ CMakeFiles/lab_7_lib_Game.dir/src/Game.cpp.o: /workspaces/OOP_labs_Andrew/lab_7/
 /usr/local/include/c++/14.2.0/bits/refwrap.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
-/usr/local/include/c++/14.2.0/bits/locale_conv.h:
 
 /usr/local/include/c++/14.2.0/bits/stl_function.h:
 
@@ -601,8 +551,6 @@ CMakeFiles/lab_7_lib_Game.dir/src/Game.cpp.o: /workspaces/OOP_labs_Andrew/lab_7/
 
 /usr/include/wchar.h:
 
-/workspaces/OOP_labs_Andrew/lab_7/include/MoveManager.h:
-
 /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/gthr-default.h:
 
 /usr/local/include/c++/14.2.0/ext/type_traits.h:
@@ -612,8 +560,6 @@ CMakeFiles/lab_7_lib_Game.dir/src/Game.cpp.o: /workspaces/OOP_labs_Andrew/lab_7/
 /usr/local/include/c++/14.2.0/bits/stl_iterator_base_types.h:
 
 /usr/local/include/c++/14.2.0/bits/erase_if.h:
-
-/usr/local/include/c++/14.2.0/bits/chrono_io.h:
 
 /usr/local/include/c++/14.2.0/bits/stl_queue.h:
 
@@ -645,8 +591,6 @@ CMakeFiles/lab_7_lib_Game.dir/src/Game.cpp.o: /workspaces/OOP_labs_Andrew/lab_7/
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
-/usr/local/include/c++/14.2.0/bits/uniform_int_dist.h:
-
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
 /usr/local/include/c++/14.2.0/bits/predefined_ops.h:
@@ -656,8 +600,6 @@ CMakeFiles/lab_7_lib_Game.dir/src/Game.cpp.o: /workspaces/OOP_labs_Andrew/lab_7/
 /usr/local/include/c++/14.2.0/bits/stl_iterator.h:
 
 /usr/local/include/c++/14.2.0/atomic:
-
-/usr/local/include/c++/14.2.0/span:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
@@ -689,8 +631,6 @@ CMakeFiles/lab_7_lib_Game.dir/src/Game.cpp.o: /workspaces/OOP_labs_Andrew/lab_7/
 
 /usr/local/include/c++/14.2.0/cctype:
 
-/usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/messages_members.h:
-
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/stdc-predef.h:
@@ -704,8 +644,6 @@ CMakeFiles/lab_7_lib_Game.dir/src/Game.cpp.o: /workspaces/OOP_labs_Andrew/lab_7/
 /workspaces/OOP_labs_Andrew/lab_7/src/Game.cpp:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/local/include/c++/14.2.0/array:
 
 /usr/local/include/c++/14.2.0/ext/numeric_traits.h:
 
@@ -769,8 +707,6 @@ CMakeFiles/lab_7_lib_Game.dir/src/Game.cpp.o: /workspaces/OOP_labs_Andrew/lab_7/
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
-/usr/local/include/c++/14.2.0/bits/locale_facets_nonio.h:
-
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
 /usr/local/include/c++/14.2.0/bits/ostream_insert.h:
@@ -827,8 +763,6 @@ CMakeFiles/lab_7_lib_Game.dir/src/Game.cpp.o: /workspaces/OOP_labs_Andrew/lab_7/
 
 /usr/include/asm-generic/errno-base.h:
 
-/usr/local/include/c++/14.2.0/format:
-
 /usr/local/include/c++/14.2.0/bits/ranges_cmp.h:
 
 /usr/local/include/c++/14.2.0/iostream:
@@ -878,8 +812,6 @@ CMakeFiles/lab_7_lib_Game.dir/src/Game.cpp.o: /workspaces/OOP_labs_Andrew/lab_7/
 /usr/local/include/c++/14.2.0/bits/stl_raw_storage_iter.h:
 
 /usr/local/include/c++/14.2.0/bits/std_mutex.h:
-
-/usr/local/include/c++/14.2.0/bits/enable_special_members.h:
 
 /usr/local/include/c++/14.2.0/bits/align.h:
 
@@ -944,8 +876,6 @@ CMakeFiles/lab_7_lib_Game.dir/src/Game.cpp.o: /workspaces/OOP_labs_Andrew/lab_7/
 /usr/local/include/c++/14.2.0/bits/version.h:
 
 /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/atomic_word.h:
-
-/usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/time_members.h:
 
 /usr/local/include/c++/14.2.0/bits/locale_classes.h:
 
@@ -1052,8 +982,6 @@ CMakeFiles/lab_7_lib_Game.dir/src/Game.cpp.o: /workspaces/OOP_labs_Andrew/lab_7/
 /usr/local/include/c++/14.2.0/bits/parse_numbers.h:
 
 /usr/include/x86_64-linux-gnu/sys/time.h:
-
-/usr/local/include/c++/14.2.0/bits/stl_algo.h:
 
 /usr/include/semaphore.h:
 

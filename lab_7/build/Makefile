@@ -328,32 +328,6 @@ lab_7_lib_FightManager/fast:
 .PHONY : lab_7_lib_FightManager/fast
 
 #=============================================================================
-# Target rules for targets named lab_7_lib_MoveManager
-
-# Build rule for target.
-lab_7_lib_MoveManager: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab_7_lib_MoveManager
-.PHONY : lab_7_lib_MoveManager
-
-# fast build rule for target.
-lab_7_lib_MoveManager/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_MoveManager.dir/build.make CMakeFiles/lab_7_lib_MoveManager.dir/build
-.PHONY : lab_7_lib_MoveManager/fast
-
-#=============================================================================
-# Target rules for targets named lab_7_lib_MapDrawer
-
-# Build rule for target.
-lab_7_lib_MapDrawer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab_7_lib_MapDrawer
-.PHONY : lab_7_lib_MapDrawer
-
-# fast build rule for target.
-lab_7_lib_MapDrawer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_MapDrawer.dir/build.make CMakeFiles/lab_7_lib_MapDrawer.dir/build
-.PHONY : lab_7_lib_MapDrawer/fast
-
-#=============================================================================
 # Target rules for targets named lab_7_lib_Game
 
 # Build rule for target.
@@ -515,54 +489,6 @@ src/Game.s: src/Game.cpp.s
 src/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_Game.dir/build.make CMakeFiles/lab_7_lib_Game.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
-
-src/MapDrawer.o: src/MapDrawer.cpp.o
-.PHONY : src/MapDrawer.o
-
-# target to build an object file
-src/MapDrawer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_MapDrawer.dir/build.make CMakeFiles/lab_7_lib_MapDrawer.dir/src/MapDrawer.cpp.o
-.PHONY : src/MapDrawer.cpp.o
-
-src/MapDrawer.i: src/MapDrawer.cpp.i
-.PHONY : src/MapDrawer.i
-
-# target to preprocess a source file
-src/MapDrawer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_MapDrawer.dir/build.make CMakeFiles/lab_7_lib_MapDrawer.dir/src/MapDrawer.cpp.i
-.PHONY : src/MapDrawer.cpp.i
-
-src/MapDrawer.s: src/MapDrawer.cpp.s
-.PHONY : src/MapDrawer.s
-
-# target to generate assembly for a file
-src/MapDrawer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_MapDrawer.dir/build.make CMakeFiles/lab_7_lib_MapDrawer.dir/src/MapDrawer.cpp.s
-.PHONY : src/MapDrawer.cpp.s
-
-src/MoveManager.o: src/MoveManager.cpp.o
-.PHONY : src/MoveManager.o
-
-# target to build an object file
-src/MoveManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_MoveManager.dir/build.make CMakeFiles/lab_7_lib_MoveManager.dir/src/MoveManager.cpp.o
-.PHONY : src/MoveManager.cpp.o
-
-src/MoveManager.i: src/MoveManager.cpp.i
-.PHONY : src/MoveManager.i
-
-# target to preprocess a source file
-src/MoveManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_MoveManager.dir/build.make CMakeFiles/lab_7_lib_MoveManager.dir/src/MoveManager.cpp.i
-.PHONY : src/MoveManager.cpp.i
-
-src/MoveManager.s: src/MoveManager.cpp.s
-.PHONY : src/MoveManager.s
-
-# target to generate assembly for a file
-src/MoveManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_MoveManager.dir/build.make CMakeFiles/lab_7_lib_MoveManager.dir/src/MoveManager.cpp.s
-.PHONY : src/MoveManager.cpp.s
 
 src/NPC.o: src/NPC.cpp.o
 .PHONY : src/NPC.o
@@ -874,8 +800,6 @@ help:
 	@echo "... lab_7_lib_FactoryRandom"
 	@echo "... lab_7_lib_FightManager"
 	@echo "... lab_7_lib_Game"
-	@echo "... lab_7_lib_MapDrawer"
-	@echo "... lab_7_lib_MoveManager"
 	@echo "... lab_7_lib_NPC"
 	@echo "... lab_7_lib_ObserverFile"
 	@echo "... lab_7_lib_ObserverMurderStdout"
@@ -895,12 +819,6 @@ help:
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"
-	@echo "... src/MapDrawer.o"
-	@echo "... src/MapDrawer.i"
-	@echo "... src/MapDrawer.s"
-	@echo "... src/MoveManager.o"
-	@echo "... src/MoveManager.i"
-	@echo "... src/MoveManager.s"
 	@echo "... src/NPC.o"
 	@echo "... src/NPC.i"
 	@echo "... src/NPC.s"

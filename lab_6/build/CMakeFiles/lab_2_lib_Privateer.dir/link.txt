@@ -1,2 +1,0 @@
-/usr/bin/ar qc liblab_2_lib_Privateer.a CMakeFiles/lab_2_lib_Privateer.dir/src/NPCs/Privateer.cpp.o
-/usr/bin/ranlib liblab_2_lib_Privateer.a

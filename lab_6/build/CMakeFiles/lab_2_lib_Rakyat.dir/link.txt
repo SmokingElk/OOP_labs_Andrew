@@ -1,2 +1,0 @@
-/usr/bin/ar qc liblab_2_lib_Rakyat.a CMakeFiles/lab_2_lib_Rakyat.dir/src/NPCs/Rakyat.cpp.o
-/usr/bin/ranlib liblab_2_lib_Rakyat.a

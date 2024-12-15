@@ -40,33 +40,75 @@ void Game::loadState (std::string filename) {
     }
 }
 
+void Game::render () {
+    Printer printer;
+
+    std::vector<char> cells(mapWidth * mapHeight, ' ');
+
+    for (auto const &npc : units) {
+        if (!npc->isAlive()) continue;
+
+        Point pos = npc->getPos();
+        cells[pos.getY() * mapWidth + pos.getX()] = npc->getSprite();
+    }
+
+    printer << "\n\n\n";
+
+    for (std::size_t y = 0; y < mapHeight; y++) {
+        for (std::size_t x = 0; x < mapWidth; x++) {
+            printer << "[" << cells[y * mapWidth + x] << "]";
+        }
+
+        printer << '\n';
+    }
+}
+
 void Game::battle (bool printMurderLog) {
     bool gameRunning = true;
 
     FightManager fightManager;
-    MoveManager moveManager(mapWidth, mapHeight);
-    MapDrawer mapDrawer(mapWidth, mapHeight);
 
     if (printMurderLog) {
         fightManager.subscribe(screenMurderOut);
     }
 
-    mapDrawer(units);
+    render();
 
-    std::thread fightThread(std::ref(fightManager), std::ref(gameRunning));
-    std::thread moveThread(std::ref(moveManager), std::ref(gameRunning), std::ref(units), std::ref(fightManager));
+    std::thread threadFight(std::ref(fightManager), std::ref(gameRunning));
+
+    std::thread threadMove([&fightManager, &gameRunning](std::size_t mapWidth, std::size_t mapHeight, NPCSet &units){
+        while (gameRunning) {
+            for (auto &npc : units) {
+                if (npc->isAlive()) npc->move(mapWidth, mapHeight);
+            }
+
+            for (auto &attacker : units) {
+                for (auto &defender : units) {
+                    if (!attacker->isAlive() || 
+                        !defender->isAlive() || 
+                        attacker == defender || 
+                        !attacker->isClose(defender) || 
+                        !defender->accept(attacker)) continue;
+
+                    fightManager.addFightPrompt(FightManager::FightPrompt(attacker, defender));
+                }
+            }
+
+            std::this_thread::sleep_for(200ms);
+        }
+    }, mapWidth, mapHeight, std::ref(units));
 
     std::size_t frames = 0;
 
     while (frames++ < 30) {
         std::this_thread::sleep_for(1s);
-        mapDrawer(units);
+        render();
     }
 
     gameRunning = false;
     
-    moveThread.join();
-    fightThread.join();
+    threadMove.join();
+    threadFight.join();
 }
 
 std::ostream& operator<< (std::ostream &os, Game &game) {

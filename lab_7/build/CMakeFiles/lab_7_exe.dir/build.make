@@ -100,13 +100,11 @@ lab_7_exe: liblab_7_lib_Privateer.a
 lab_7_exe: liblab_7_lib_Rakyat.a
 lab_7_exe: liblab_7_lib_ObserverStdout.a
 lab_7_exe: liblab_7_lib_ObserverMurderStdout.a
+lab_7_exe: liblab_7_lib_Printer.a
 lab_7_exe: liblab_7_lib_ObserverFile.a
-lab_7_exe: liblab_7_lib_MoveManager.a
 lab_7_exe: liblab_7_lib_FightManager.a
-lab_7_exe: liblab_7_lib_MapDrawer.a
 lab_7_exe: liblab_7_lib_NPC.a
 lab_7_exe: liblab_7_lib_utils.a
-lab_7_exe: liblab_7_lib_Printer.a
 lab_7_exe: CMakeFiles/lab_7_exe.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable lab_7_exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lab_7_exe.dir/link.txt --verbose=$(VERBOSE)

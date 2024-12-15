@@ -374,13 +374,10 @@ lab_7_lib_FactoryRandom_LIB_DEPENDS:STATIC=general;lab_7_lib_utils;general;lab_7
 lab_7_lib_FightManager_LIB_DEPENDS:STATIC=general;lab_7_lib_utils;general;lab_7_lib_NPC;
 
 //Dependencies for the target
-lab_7_lib_Game_LIB_DEPENDS:STATIC=general;lab_7_lib_utils;general;lab_7_lib_NPC;general;lab_7_lib_Pirate;general;lab_7_lib_Privateer;general;lab_7_lib_Rakyat;general;lab_7_lib_FactoryRandom;general;lab_7_lib_FactoryFile;general;lab_7_lib_ObserverStdout;general;lab_7_lib_ObserverMurderStdout;general;lab_7_lib_ObserverFile;general;lab_7_lib_FightManager;general;lab_7_lib_MoveManager;general;lab_7_lib_MapDrawer;
+lab_7_lib_Game_LIB_DEPENDS:STATIC=general;lab_7_lib_utils;general;lab_7_lib_NPC;general;lab_7_lib_Pirate;general;lab_7_lib_Privateer;general;lab_7_lib_Rakyat;general;lab_7_lib_FactoryRandom;general;lab_7_lib_FactoryFile;general;lab_7_lib_ObserverStdout;general;lab_7_lib_ObserverMurderStdout;general;lab_7_lib_ObserverFile;general;lab_7_lib_FightManager;
 
 //Dependencies for the target
 lab_7_lib_MapDrawer_LIB_DEPENDS:STATIC=general;lab_7_lib_utils;general;lab_7_lib_NPC;general;lab_7_lib_Printer;general;lab_7_lib_Printer;
-
-//Dependencies for the target
-lab_7_lib_MoveManager_LIB_DEPENDS:STATIC=general;lab_7_lib_utils;general;lab_7_lib_NPC;general;lab_7_lib_FightManager;
 
 //Dependencies for the target
 lab_7_lib_NPC_LIB_DEPENDS:STATIC=general;lab_7_lib_utils;

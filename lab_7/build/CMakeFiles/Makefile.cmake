@@ -89,8 +89,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/lab_7_lib_ObserverMurderStdout.dir/DependInfo.cmake"
   "CMakeFiles/lab_7_lib_ObserverFile.dir/DependInfo.cmake"
   "CMakeFiles/lab_7_lib_FightManager.dir/DependInfo.cmake"
-  "CMakeFiles/lab_7_lib_MoveManager.dir/DependInfo.cmake"
-  "CMakeFiles/lab_7_lib_MapDrawer.dir/DependInfo.cmake"
   "CMakeFiles/lab_7_lib_Game.dir/DependInfo.cmake"
   "CMakeFiles/lab_7_exe.dir/DependInfo.cmake"
   "CMakeFiles/tests.dir/DependInfo.cmake"

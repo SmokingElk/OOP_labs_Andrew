@@ -65,7 +65,7 @@ std::size_t NPC::getKillDistance () const {
 
 bool NPC::isClose (const std::shared_ptr<NPC> &other) {
     std::shared_lock<std::shared_mutex> lock(mtx);
-    return (position - other->position).abs() < killDistance;
+    return (position - other->getPos()).abs() < killDistance;
 }
 
 // alive может изменяться, делаем лок на чтение в геттере, на запись - в "сеттере"

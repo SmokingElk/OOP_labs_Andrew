@@ -11,8 +11,6 @@
 #include "observers/ObserverMurderStdout.h"
 #include "observers/ObserverFile.h"
 #include "FightManager.h"
-#include "MoveManager.h"
-#include "MapDrawer.h"
 
 class Game {
     private:
@@ -25,6 +23,8 @@ class Game {
         std::shared_ptr<ObserverStdout> screenOut{nullptr};
         std::shared_ptr<ObserverMurderStdout> screenMurderOut{nullptr};
         std::shared_ptr<ObserverFile> fileOut{nullptr};
+
+        void render ();
 
     public:
         Game (std::size_t width, std::size_t height);

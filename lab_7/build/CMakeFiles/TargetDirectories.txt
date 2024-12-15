@@ -10,8 +10,6 @@
 /workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles/lab_7_lib_ObserverMurderStdout.dir
 /workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles/lab_7_lib_ObserverFile.dir
 /workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles/lab_7_lib_FightManager.dir
-/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles/lab_7_lib_MoveManager.dir
-/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles/lab_7_lib_MapDrawer.dir
 /workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles/lab_7_lib_Game.dir
 /workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles/lab_7_exe.dir
 /workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles/tests.dir

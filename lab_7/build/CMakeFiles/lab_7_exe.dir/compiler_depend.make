@@ -356,7 +356,6 @@ CMakeFiles/lab_7_exe.dir/main.cpp.o: /workspaces/OOP_labs_Andrew/lab_7/main.cpp 
   /usr/local/include/c++/14.2.0/bits/deque.tcc \
   /usr/local/include/c++/14.2.0/bits/stl_queue.h \
   /workspaces/OOP_labs_Andrew/lab_7/include/observers/ObserverFile.h \
-  /workspaces/OOP_labs_Andrew/lab_7/include/MoveManager.h \
   /workspaces/OOP_labs_Andrew/lab_7/include/MapDrawer.h
 
 
@@ -571,8 +570,6 @@ CMakeFiles/lab_7_exe.dir/main.cpp.o: /workspaces/OOP_labs_Andrew/lab_7/main.cpp 
 /usr/include/libintl.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/workspaces/OOP_labs_Andrew/lab_7/include/MoveManager.h:
 
 /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/gthr-default.h:
 

@@ -24,8 +24,6 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles/lab_7_lib_ObserverMurderStdout.dir/DependInfo.cmake"
   "/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles/lab_7_lib_ObserverFile.dir/DependInfo.cmake"
   "/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles/lab_7_lib_FightManager.dir/DependInfo.cmake"
-  "/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles/lab_7_lib_MoveManager.dir/DependInfo.cmake"
-  "/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles/lab_7_lib_MapDrawer.dir/DependInfo.cmake"
   "/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles/lab_7_lib_Printer.dir/DependInfo.cmake"
   )
 

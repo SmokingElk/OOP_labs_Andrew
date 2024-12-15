@@ -304,27 +304,4 @@ CMakeFiles/lab_7_lib_Game.dir/src/Game.cpp.o: \
  /usr/local/include/c++/14.2.0/bits/vector.tcc \
  /usr/local/include/c++/14.2.0/bits/stl_heap.h \
  /usr/local/include/c++/14.2.0/bits/stl_queue.h \
- /workspaces/OOP_labs_Andrew/lab_7/src/../include/observers/ObserverFile.h \
- /workspaces/OOP_labs_Andrew/lab_7/src/../include/MoveManager.h \
- /usr/local/include/c++/14.2.0/chrono \
- /usr/local/include/c++/14.2.0/bits/stl_algo.h \
- /usr/local/include/c++/14.2.0/bits/algorithmfwd.h \
- /usr/local/include/c++/14.2.0/bits/uniform_int_dist.h \
- /usr/local/include/c++/14.2.0/bits/chrono_io.h \
- /usr/local/include/c++/14.2.0/iomanip \
- /usr/local/include/c++/14.2.0/locale \
- /usr/local/include/c++/14.2.0/bits/locale_facets_nonio.h \
- /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/time_members.h \
- /usr/local/include/c++/14.2.0/x86_64-linux-gnu/bits/messages_members.h \
- /usr/include/libintl.h \
- /usr/local/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
- /usr/local/include/c++/14.2.0/bits/locale_conv.h \
- /usr/local/include/c++/14.2.0/bits/quoted_string.h \
- /usr/local/include/c++/14.2.0/format /usr/local/include/c++/14.2.0/array \
- /usr/local/include/c++/14.2.0/charconv \
- /usr/local/include/c++/14.2.0/optional \
- /usr/local/include/c++/14.2.0/bits/enable_special_members.h \
- /usr/local/include/c++/14.2.0/span /usr/local/include/c++/14.2.0/variant \
- /usr/local/include/c++/14.2.0/bits/unicode.h \
- /usr/local/include/c++/14.2.0/bits/unicode-data.h \
- /workspaces/OOP_labs_Andrew/lab_7/src/../include/MapDrawer.h
+ /workspaces/OOP_labs_Andrew/lab_7/src/../include/observers/ObserverFile.h

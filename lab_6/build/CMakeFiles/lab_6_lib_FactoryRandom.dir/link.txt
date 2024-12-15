@@ -1,2 +1,0 @@
-/usr/bin/ar qc liblab_6_lib_FactoryRandom.a CMakeFiles/lab_6_lib_FactoryRandom.dir/src/factories/FactoryRandom.cpp.o
-/usr/bin/ranlib liblab_6_lib_FactoryRandom.a

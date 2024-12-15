@@ -36,8 +36,6 @@ add_library(${CMAKE_PROJECT_NAME}_lib_ObserverMurderStdout src/observers/Observe
 add_library(${CMAKE_PROJECT_NAME}_lib_ObserverFile src/observers/ObserverFile.cpp)
 
 add_library(${CMAKE_PROJECT_NAME}_lib_FightManager src/FightManager.cpp)
-add_library(${CMAKE_PROJECT_NAME}_lib_MoveManager src/MoveManager.cpp)
-add_library(${CMAKE_PROJECT_NAME}_lib_MapDrawer src/MapDrawer.cpp)
 
 add_library(${CMAKE_PROJECT_NAME}_lib_Game src/Game.cpp)
 
@@ -80,16 +78,7 @@ target_link_libraries(${CMAKE_PROJECT_NAME}_lib_ObserverFile PRIVATE ${CMAKE_PRO
 target_link_libraries(${CMAKE_PROJECT_NAME}_lib_FightManager PRIVATE ${CMAKE_PROJECT_NAME}_lib_utils)
 target_link_libraries(${CMAKE_PROJECT_NAME}_lib_FightManager PRIVATE ${CMAKE_PROJECT_NAME}_lib_NPC)
 
-target_link_libraries(${CMAKE_PROJECT_NAME}_lib_MoveManager PRIVATE ${CMAKE_PROJECT_NAME}_lib_utils)
-target_link_libraries(${CMAKE_PROJECT_NAME}_lib_MoveManager PRIVATE ${CMAKE_PROJECT_NAME}_lib_NPC)
-target_link_libraries(${CMAKE_PROJECT_NAME}_lib_MoveManager PRIVATE ${CMAKE_PROJECT_NAME}_lib_FightManager)
-
-target_link_libraries(${CMAKE_PROJECT_NAME}_lib_MapDrawer PRIVATE ${CMAKE_PROJECT_NAME}_lib_utils)
-target_link_libraries(${CMAKE_PROJECT_NAME}_lib_MapDrawer PRIVATE ${CMAKE_PROJECT_NAME}_lib_NPC)
-target_link_libraries(${CMAKE_PROJECT_NAME}_lib_MapDrawer PRIVATE ${CMAKE_PROJECT_NAME}_lib_Printer)
-
 target_link_libraries(${CMAKE_PROJECT_NAME}_lib_Game PRIVATE ${CMAKE_PROJECT_NAME}_lib_utils)
-target_link_libraries(${CMAKE_PROJECT_NAME}_lib_MapDrawer PRIVATE ${CMAKE_PROJECT_NAME}_lib_Printer)
 target_link_libraries(${CMAKE_PROJECT_NAME}_lib_Game PRIVATE ${CMAKE_PROJECT_NAME}_lib_NPC)
 target_link_libraries(${CMAKE_PROJECT_NAME}_lib_Game PRIVATE ${CMAKE_PROJECT_NAME}_lib_Pirate)
 target_link_libraries(${CMAKE_PROJECT_NAME}_lib_Game PRIVATE ${CMAKE_PROJECT_NAME}_lib_Privateer)
@@ -100,8 +89,6 @@ target_link_libraries(${CMAKE_PROJECT_NAME}_lib_Game PRIVATE ${CMAKE_PROJECT_NAM
 target_link_libraries(${CMAKE_PROJECT_NAME}_lib_Game PRIVATE ${CMAKE_PROJECT_NAME}_lib_ObserverMurderStdout)
 target_link_libraries(${CMAKE_PROJECT_NAME}_lib_Game PRIVATE ${CMAKE_PROJECT_NAME}_lib_ObserverFile)
 target_link_libraries(${CMAKE_PROJECT_NAME}_lib_Game PRIVATE ${CMAKE_PROJECT_NAME}_lib_FightManager)
-target_link_libraries(${CMAKE_PROJECT_NAME}_lib_Game PRIVATE ${CMAKE_PROJECT_NAME}_lib_MoveManager)
-target_link_libraries(${CMAKE_PROJECT_NAME}_lib_Game PRIVATE ${CMAKE_PROJECT_NAME}_lib_MapDrawer)
 
 target_link_libraries(${CMAKE_PROJECT_NAME}_exe PRIVATE ${CMAKE_PROJECT_NAME}_lib_Game)
 

@@ -75,8 +75,6 @@ all: CMakeFiles/lab_7_lib_ObserverStdout.dir/all
 all: CMakeFiles/lab_7_lib_ObserverMurderStdout.dir/all
 all: CMakeFiles/lab_7_lib_ObserverFile.dir/all
 all: CMakeFiles/lab_7_lib_FightManager.dir/all
-all: CMakeFiles/lab_7_lib_MoveManager.dir/all
-all: CMakeFiles/lab_7_lib_MapDrawer.dir/all
 all: CMakeFiles/lab_7_lib_Game.dir/all
 all: CMakeFiles/lab_7_exe.dir/all
 all: CMakeFiles/tests.dir/all
@@ -100,8 +98,6 @@ clean: CMakeFiles/lab_7_lib_ObserverStdout.dir/clean
 clean: CMakeFiles/lab_7_lib_ObserverMurderStdout.dir/clean
 clean: CMakeFiles/lab_7_lib_ObserverFile.dir/clean
 clean: CMakeFiles/lab_7_lib_FightManager.dir/clean
-clean: CMakeFiles/lab_7_lib_MoveManager.dir/clean
-clean: CMakeFiles/lab_7_lib_MapDrawer.dir/clean
 clean: CMakeFiles/lab_7_lib_Game.dir/clean
 clean: CMakeFiles/lab_7_exe.dir/clean
 clean: CMakeFiles/tests.dir/clean
@@ -166,7 +162,7 @@ _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMake
 CMakeFiles/lab_7_lib_utils.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_utils.dir/build.make CMakeFiles/lab_7_lib_utils.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_utils.dir/build.make CMakeFiles/lab_7_lib_utils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=39,40 "Built target lab_7_lib_utils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=35,36 "Built target lab_7_lib_utils"
 .PHONY : CMakeFiles/lab_7_lib_utils.dir/all
 
 # Build rule for subdir invocation for target.
@@ -192,7 +188,7 @@ CMakeFiles/lab_7_lib_utils.dir/clean:
 CMakeFiles/lab_7_lib_Printer.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_Printer.dir/build.make CMakeFiles/lab_7_lib_Printer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_Printer.dir/build.make CMakeFiles/lab_7_lib_Printer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=33,34 "Built target lab_7_lib_Printer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=29,30 "Built target lab_7_lib_Printer"
 .PHONY : CMakeFiles/lab_7_lib_Printer.dir/all
 
 # Build rule for subdir invocation for target.
@@ -218,7 +214,7 @@ CMakeFiles/lab_7_lib_Printer.dir/clean:
 CMakeFiles/lab_7_lib_NPC.dir/all: CMakeFiles/lab_7_lib_utils.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_NPC.dir/build.make CMakeFiles/lab_7_lib_NPC.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_NPC.dir/build.make CMakeFiles/lab_7_lib_NPC.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=23,24 "Built target lab_7_lib_NPC"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=19,20 "Built target lab_7_lib_NPC"
 .PHONY : CMakeFiles/lab_7_lib_NPC.dir/all
 
 # Build rule for subdir invocation for target.
@@ -245,7 +241,7 @@ CMakeFiles/lab_7_lib_Pirate.dir/all: CMakeFiles/lab_7_lib_utils.dir/all
 CMakeFiles/lab_7_lib_Pirate.dir/all: CMakeFiles/lab_7_lib_NPC.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_Pirate.dir/build.make CMakeFiles/lab_7_lib_Pirate.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_Pirate.dir/build.make CMakeFiles/lab_7_lib_Pirate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=31,32 "Built target lab_7_lib_Pirate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=27,28 "Built target lab_7_lib_Pirate"
 .PHONY : CMakeFiles/lab_7_lib_Pirate.dir/all
 
 # Build rule for subdir invocation for target.
@@ -272,7 +268,7 @@ CMakeFiles/lab_7_lib_Privateer.dir/all: CMakeFiles/lab_7_lib_utils.dir/all
 CMakeFiles/lab_7_lib_Privateer.dir/all: CMakeFiles/lab_7_lib_NPC.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_Privateer.dir/build.make CMakeFiles/lab_7_lib_Privateer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_Privateer.dir/build.make CMakeFiles/lab_7_lib_Privateer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=35,36 "Built target lab_7_lib_Privateer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=31,32 "Built target lab_7_lib_Privateer"
 .PHONY : CMakeFiles/lab_7_lib_Privateer.dir/all
 
 # Build rule for subdir invocation for target.
@@ -299,7 +295,7 @@ CMakeFiles/lab_7_lib_Rakyat.dir/all: CMakeFiles/lab_7_lib_utils.dir/all
 CMakeFiles/lab_7_lib_Rakyat.dir/all: CMakeFiles/lab_7_lib_NPC.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_Rakyat.dir/build.make CMakeFiles/lab_7_lib_Rakyat.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_Rakyat.dir/build.make CMakeFiles/lab_7_lib_Rakyat.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=37,38 "Built target lab_7_lib_Rakyat"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=33,34 "Built target lab_7_lib_Rakyat"
 .PHONY : CMakeFiles/lab_7_lib_Rakyat.dir/all
 
 # Build rule for subdir invocation for target.
@@ -387,7 +383,7 @@ CMakeFiles/lab_7_lib_ObserverStdout.dir/all: CMakeFiles/lab_7_lib_Printer.dir/al
 CMakeFiles/lab_7_lib_ObserverStdout.dir/all: CMakeFiles/lab_7_lib_NPC.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_ObserverStdout.dir/build.make CMakeFiles/lab_7_lib_ObserverStdout.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_ObserverStdout.dir/build.make CMakeFiles/lab_7_lib_ObserverStdout.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=29,30 "Built target lab_7_lib_ObserverStdout"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=25,26 "Built target lab_7_lib_ObserverStdout"
 .PHONY : CMakeFiles/lab_7_lib_ObserverStdout.dir/all
 
 # Build rule for subdir invocation for target.
@@ -415,7 +411,7 @@ CMakeFiles/lab_7_lib_ObserverMurderStdout.dir/all: CMakeFiles/lab_7_lib_Printer.
 CMakeFiles/lab_7_lib_ObserverMurderStdout.dir/all: CMakeFiles/lab_7_lib_NPC.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_ObserverMurderStdout.dir/build.make CMakeFiles/lab_7_lib_ObserverMurderStdout.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_ObserverMurderStdout.dir/build.make CMakeFiles/lab_7_lib_ObserverMurderStdout.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=27,28 "Built target lab_7_lib_ObserverMurderStdout"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=23,24 "Built target lab_7_lib_ObserverMurderStdout"
 .PHONY : CMakeFiles/lab_7_lib_ObserverMurderStdout.dir/all
 
 # Build rule for subdir invocation for target.
@@ -442,7 +438,7 @@ CMakeFiles/lab_7_lib_ObserverFile.dir/all: CMakeFiles/lab_7_lib_utils.dir/all
 CMakeFiles/lab_7_lib_ObserverFile.dir/all: CMakeFiles/lab_7_lib_NPC.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_ObserverFile.dir/build.make CMakeFiles/lab_7_lib_ObserverFile.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_ObserverFile.dir/build.make CMakeFiles/lab_7_lib_ObserverFile.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=25,26 "Built target lab_7_lib_ObserverFile"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=21,22 "Built target lab_7_lib_ObserverFile"
 .PHONY : CMakeFiles/lab_7_lib_ObserverFile.dir/all
 
 # Build rule for subdir invocation for target.
@@ -489,62 +485,6 @@ CMakeFiles/lab_7_lib_FightManager.dir/clean:
 .PHONY : CMakeFiles/lab_7_lib_FightManager.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/lab_7_lib_MoveManager.dir
-
-# All Build rule for target.
-CMakeFiles/lab_7_lib_MoveManager.dir/all: CMakeFiles/lab_7_lib_utils.dir/all
-CMakeFiles/lab_7_lib_MoveManager.dir/all: CMakeFiles/lab_7_lib_NPC.dir/all
-CMakeFiles/lab_7_lib_MoveManager.dir/all: CMakeFiles/lab_7_lib_FightManager.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_MoveManager.dir/build.make CMakeFiles/lab_7_lib_MoveManager.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_MoveManager.dir/build.make CMakeFiles/lab_7_lib_MoveManager.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=21,22 "Built target lab_7_lib_MoveManager"
-.PHONY : CMakeFiles/lab_7_lib_MoveManager.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/lab_7_lib_MoveManager.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab_7_lib_MoveManager.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles 0
-.PHONY : CMakeFiles/lab_7_lib_MoveManager.dir/rule
-
-# Convenience name for target.
-lab_7_lib_MoveManager: CMakeFiles/lab_7_lib_MoveManager.dir/rule
-.PHONY : lab_7_lib_MoveManager
-
-# clean rule for target.
-CMakeFiles/lab_7_lib_MoveManager.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_MoveManager.dir/build.make CMakeFiles/lab_7_lib_MoveManager.dir/clean
-.PHONY : CMakeFiles/lab_7_lib_MoveManager.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/lab_7_lib_MapDrawer.dir
-
-# All Build rule for target.
-CMakeFiles/lab_7_lib_MapDrawer.dir/all: CMakeFiles/lab_7_lib_utils.dir/all
-CMakeFiles/lab_7_lib_MapDrawer.dir/all: CMakeFiles/lab_7_lib_Printer.dir/all
-CMakeFiles/lab_7_lib_MapDrawer.dir/all: CMakeFiles/lab_7_lib_NPC.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_MapDrawer.dir/build.make CMakeFiles/lab_7_lib_MapDrawer.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_MapDrawer.dir/build.make CMakeFiles/lab_7_lib_MapDrawer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=19,20 "Built target lab_7_lib_MapDrawer"
-.PHONY : CMakeFiles/lab_7_lib_MapDrawer.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/lab_7_lib_MapDrawer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab_7_lib_MapDrawer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles 0
-.PHONY : CMakeFiles/lab_7_lib_MapDrawer.dir/rule
-
-# Convenience name for target.
-lab_7_lib_MapDrawer: CMakeFiles/lab_7_lib_MapDrawer.dir/rule
-.PHONY : lab_7_lib_MapDrawer
-
-# clean rule for target.
-CMakeFiles/lab_7_lib_MapDrawer.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_MapDrawer.dir/build.make CMakeFiles/lab_7_lib_MapDrawer.dir/clean
-.PHONY : CMakeFiles/lab_7_lib_MapDrawer.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/lab_7_lib_Game.dir
 
 # All Build rule for target.
@@ -560,8 +500,6 @@ CMakeFiles/lab_7_lib_Game.dir/all: CMakeFiles/lab_7_lib_ObserverStdout.dir/all
 CMakeFiles/lab_7_lib_Game.dir/all: CMakeFiles/lab_7_lib_ObserverMurderStdout.dir/all
 CMakeFiles/lab_7_lib_Game.dir/all: CMakeFiles/lab_7_lib_ObserverFile.dir/all
 CMakeFiles/lab_7_lib_Game.dir/all: CMakeFiles/lab_7_lib_FightManager.dir/all
-CMakeFiles/lab_7_lib_Game.dir/all: CMakeFiles/lab_7_lib_MoveManager.dir/all
-CMakeFiles/lab_7_lib_Game.dir/all: CMakeFiles/lab_7_lib_MapDrawer.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_Game.dir/build.make CMakeFiles/lab_7_lib_Game.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_lib_Game.dir/build.make CMakeFiles/lab_7_lib_Game.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=17,18 "Built target lab_7_lib_Game"
@@ -569,7 +507,7 @@ CMakeFiles/lab_7_lib_Game.dir/all: CMakeFiles/lab_7_lib_MapDrawer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lab_7_lib_Game.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles 26
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab_7_lib_Game.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles 0
 .PHONY : CMakeFiles/lab_7_lib_Game.dir/rule
@@ -599,8 +537,6 @@ CMakeFiles/lab_7_exe.dir/all: CMakeFiles/lab_7_lib_ObserverStdout.dir/all
 CMakeFiles/lab_7_exe.dir/all: CMakeFiles/lab_7_lib_ObserverMurderStdout.dir/all
 CMakeFiles/lab_7_exe.dir/all: CMakeFiles/lab_7_lib_ObserverFile.dir/all
 CMakeFiles/lab_7_exe.dir/all: CMakeFiles/lab_7_lib_FightManager.dir/all
-CMakeFiles/lab_7_exe.dir/all: CMakeFiles/lab_7_lib_MoveManager.dir/all
-CMakeFiles/lab_7_exe.dir/all: CMakeFiles/lab_7_lib_MapDrawer.dir/all
 CMakeFiles/lab_7_exe.dir/all: CMakeFiles/lab_7_lib_Game.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_exe.dir/build.make CMakeFiles/lab_7_exe.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_7_exe.dir/build.make CMakeFiles/lab_7_exe.dir/build
@@ -609,7 +545,7 @@ CMakeFiles/lab_7_exe.dir/all: CMakeFiles/lab_7_lib_Game.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lab_7_exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab_7_exe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles 0
 .PHONY : CMakeFiles/lab_7_exe.dir/rule
@@ -638,7 +574,7 @@ CMakeFiles/tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir
 CMakeFiles/tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=41,42 "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/OOP_labs_Andrew/lab_7/build/CMakeFiles --progress-num=37,38 "Built target tests"
 .PHONY : CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.

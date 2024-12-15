@@ -323,6 +323,4 @@ CMakeFiles/lab_7_exe.dir/main.cpp.o: \
  /usr/local/include/c++/14.2.0/bits/stl_deque.h \
  /usr/local/include/c++/14.2.0/bits/deque.tcc \
  /usr/local/include/c++/14.2.0/bits/stl_queue.h \
- /workspaces/OOP_labs_Andrew/lab_7/include/observers/ObserverFile.h \
- /workspaces/OOP_labs_Andrew/lab_7/include/MoveManager.h \
- /workspaces/OOP_labs_Andrew/lab_7/include/MapDrawer.h
+ /workspaces/OOP_labs_Andrew/lab_7/include/observers/ObserverFile.h
